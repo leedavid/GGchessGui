@@ -1,0 +1,70 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go infinite
+
+stop
+
+stop
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go wtime 300000 btime 300000
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves d3c1
+
+go infinite
+
+stop
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves d3c1
+
+go infinite
+
+stop
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go infinite
+
+stop
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go infinite
+
+stop
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go infinite
+
+stop
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go infinite
+
+stop
+
+force
+
+stop
+
+quit
+

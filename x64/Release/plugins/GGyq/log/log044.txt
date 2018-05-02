@@ -1,0 +1,8 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+stop
+
+quit
+

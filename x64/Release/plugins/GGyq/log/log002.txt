@@ -1,0 +1,200 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+fen 4kab2/4a4/4b4/p3rn2p/5c3/P2R5/8P/N3C4/4A4/2BK1AB2 w - - 0 1 moves a2c3 f6h5 c3e4 f5e5 e4d2 e5c5 d4h4 h5g7 h4b4 e6d6 b4b9 d6d9 b9b6 d9d4 b6g6 c5d5 d0e0 d5e5 e0d0 e5d5 d0e0 d5e5 e0d0 e5d5 d0e0 d5e5 e0d0 e5d5 d0e0 d5d7 c0a2 d4d3 i3i4 e9d9
+
+go wtime 1000 btime 15000 winc 15000 binc 60000
+
+fen 4kab2/4a4/4b4/p3rn2p/5c3/P2R5/8P/N3C4/4A4/2BK1AB2 w - - 0 1 moves a2c3 f6h5 c3e4 f5e5 e4d2 e5c5 d4h4 h5g7 h4b4 e6d6 b4b9 d6d9 b9b6 d9d4 b6g6 c5d5 d0e0 d5e5 e0d0 e5d5 d0e0 d5e5 e0d0 e5d5 d0e0 d5e5 e0d0 e5d5 d0e0 d5d7 c0a2 d4d3 i3i4 e9d9 e2g2 d7d2
+
+go wtime 1000 btime 14063 winc 15000 binc 60000 ponder
+
+ponderhit
+
+fen 3k1ab2/4a4/4b1C2/p5R1p/9/P7P/3r5/B2c5/4A4/4KAB2 b - - 0 1 moves d2h2
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 3k1ab2/4a4/4b1C2/R7p/9/P7P/3r5/B6c1/4A4/4KAB2 b - - 0 1 moves d9e9
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 3k1ab2/4a4/4b1C2/R7p/9/P7P/3r5/B6c1/4A4/4KAB2 b - - 0 1 moves d9e9 a4a5 h2h5
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 3k1ab2/4a4/4b1C2/R7p/9/P7P/3r5/B6c1/4A4/4KAB2 b - - 0 1 moves d9e9 a4a5 h2h5 g7g2 d3d5
+
+go wtime 1000 btime 14985 winc 60000 binc 60000 ponder
+
+stop
+
+fen 3k1ab2/4a4/4b1C2/R7p/9/P7P/3r5/B6c1/4A4/4KAB2 b - - 0 1 moves d9e9 a4a5 h2h5 g7g2 h5e5
+
+go wtime 1000 btime 15000 winc 60000 binc 60000
+
+fen 3k1ab2/4a4/4b1C2/R7p/9/P7P/3r5/B6c1/4A4/4KAB2 b - - 0 1 moves d9e9 a4a5 h2h5 g7g2 h5e5 e1f2 d3d4
+
+go wtime 1000 btime 14141 winc 60000 binc 60000 ponder
+
+stop
+
+fen 3k1ab2/4a4/4b1C2/R7p/9/P7P/3r5/B6c1/4A4/4KAB2 b - - 0 1 moves d9e9 a4a5 h2h5 g7g2 h5e5 e1f2 d3f3
+
+go wtime 1000 btime 15000 winc 60000 binc 60000
+
+fen 3k1ab2/4a4/4b1C2/R7p/9/P7P/3r5/B6c1/4A4/4KAB2 b - - 0 1 moves d9e9 a4a5 h2h5 g7g2 h5e5 e1f2 d3f3 g2i2 f3e3
+
+go wtime 1000 btime 14078 winc 60000 binc 60000 ponder
+
+stop
+
+fen 4kab2/4a4/4b4/R7p/P3c4/8P/9/B4r2C/9/4KAB2 w - - 0 1 moves
+
+go wtime 1000 btime 15000 winc 60000 binc 60000
+
+fen 4kab2/4a4/4b4/R7p/P3c4/8P/9/B4r2C/9/4KAB2 w - - 0 1 moves a6e6 e5h5
+
+go wtime 1000 btime 14078 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/4R3C/P6c1/8P/9/B4r3/9/4KAB2 b - - 0 1 moves h5h0
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/4R3C/P6c1/8P/9/B4r3/9/4KAB2 b - - 0 1 moves h5h0 e0e1 f2f0
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/4R3C/P8/8P/9/B8/4K4/5rBc1 w - - 0 1 moves e6h6 f0g0
+
+go wtime 1000 btime 14985 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g1
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+
+stop
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5
+
+go wtime 1000 btime 15000 winc 60000 binc 60000
+
+stop
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8d7
+
+go wtime 1000 btime 14985 winc 60000 binc 60000 ponder
+
+stop
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7
+
+go wtime 1000 btime 15000 winc 60000 binc 60000
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7 a5a6 g5g6
+
+go wtime 1000 btime 14172 winc 60000 binc 60000 ponder
+
+stop
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7 a5a6 g5e5
+
+go wtime 1000 btime 15000 winc 60000 binc 60000
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7 a5a6 g5e5 d6d9 e9e8
+
+go wtime 1000 btime 14062 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7 a5a6 g5e5 d6d9 e9e8 e6b6 e5b5
+
+go wtime 1000 btime 14969 winc 60000 binc 60000 ponder
+
+stop
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7 a5a6 g5e5 d6d9 e9e8 e6b6 h0a0
+
+go wtime 1000 btime 15000 winc 60000 binc 60000
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7 a5a6 g5e5 d6d9 e9e8 e6b6 h0a0 a2c4 e5e1
+
+go wtime 1000 btime 14078 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7 a5a6 g5e5 d6d9 e9e8 e6b6 h0a0 a2c4 e5e1 d1d0 e1e0
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/7RC/P8/8P/9/B8/4K4/6rc1 w - - 0 1 moves h6d6 g0g5 e1d1 e7c9 i6e6 e8f7 a5a6 g5e5 d6d9 e9e8 e6b6 h0a0 a2c4 e5e1 d1d0 e1e0 d0d1 a0d0
+
+go wtime 1000 btime 14984 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 2b2Rb2/4k4/5a3/PC7/9/2B5P/9/9/3K5/3cr4 b - - 0 1 moves e0e4
+
+go wtime 1000 btime 14984 winc 60000 binc 60000 ponder
+
+stop
+
+fen 2b2Rb2/4k4/5a3/PC7/9/2B5P/9/9/3K5/3cr4 b - - 0 1 moves e0e5
+
+go wtime 1000 btime 15000 winc 60000 binc 60000
+
+fen 2b2Rb2/4k4/5a3/PC7/9/2B5P/9/9/3K5/3cr4 b - - 0 1 moves e0e5 c4e2 e5e2
+
+go wtime 1000 btime 14485 winc 60000 binc 60000 ponder
+
+ponderhit
+
+fen 2b2Rb2/4k4/5a3/PC7/9/8P/9/4r4/3K5/3c5 w - - 0 1 moves b6b9 c9a7
+
+go wtime 1000 btime 15000 winc 60000 binc 60000 ponder
+

@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by GGchess.rc
+//
+#define HIDC_BUTTON_UPDATE_RESULT       0x80fc048e    // DLG_BOOK

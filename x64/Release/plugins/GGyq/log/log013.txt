@@ -1,0 +1,12 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+fen 2b1k4/3cC4/4b4/5N3/9/8p/9/2n2A3/3K5/2B2AB2 b - - 0 1 moves e9f9 g0e2 i4i3 e8h8 d8d6 f6h5 i3i2 h8h9 i2i1 h5g7 f9e9 g7i8 e9e8 i8g7 e8f8 h9h4 d6d7 g7h5 e7g5 h4f4 c2d4 d1e1 d4b3 h5g3 b3c1 e1f1 d7a7 g3f5 f8e8 f5d6
+
+go wtime 474000 btime 334000
+

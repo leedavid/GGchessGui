@@ -1,0 +1,1391 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_timeBlue            ICON                    "timeBlue.ico"
+IDI_timeRed             ICON                    "timeRed.ico"
+ICON_WHITE              ICON                    "icon-white.ico"
+ICON_BLACK              ICON                    "icon-black.ico"
+IDI_ICON1               ICON                    "iconlayer.ico"
+IDI_ICON2               ICON                    "icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_GGCHESS MENU
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "复位棋局(&G)",                    IDM_NewGame
+        MENUITEM SEPARATOR
+        MENUITEM "打开棋局(&L)...",                 IDM_LoadGame
+        MENUITEM "重新打开棋局(&R)",                  IDM_ReloadGame
+        MENUITEM "保存游戏(&S)...",                 IDM_SaveGame
+        MENUITEM SEPARATOR
+        MENUITEM "拷贝棋局到剪贴板(&C)\tAlt+C",         IDM_CopyGame
+        MENUITEM "从剪贴板粘贴棋局(&F)\tAlt+V",         IDM_PasteGame
+        MENUITEM SEPARATOR
+        MENUITEM "导出棋局(&A)... ",                IDM_export_qj
+        MENUITEM SEPARATOR
+        MENUITEM "拷贝局面到剪贴板(&Y)\tAlt+Shift+C",   IDM_CopyPosition
+        MENUITEM "从剪贴板粘贴局面(&T)\tAlt+Shift+V",   IDM_PastePosition
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      33026
+    END
+    POPUP "模式"
+    BEGIN
+        MENUITEM "&W 使用引擎(１)",                  IDM_MachineWhite
+        MENUITEM "&B 使用引擎(２)",                  IDM_MachineBlack
+        MENUITEM "&M 引擎对战",                     IDM_TwoMachines
+        MENUITEM SEPARATOR
+        MENUITEM "引擎设定(&Y)...",                 IDM_TimeControl
+        MENUITEM SEPARATOR
+        MENUITEM "&A 分析模式",                     IDM_AnalysisMode
+        MENUITEM "&F 分析棋局文件",                   IDM_AnalyzeFile
+        MENUITEM "&G 编辑棋局",                     IDM_EditGame
+        MENUITEM "&E 编辑局面",                     IDM_EditPosition
+        MENUITEM "&N 教练模式",                     IDM_Training
+        MENUITEM SEPARATOR
+        MENUITEM "&C 网络对战",                     IDM_IcsClient
+        MENUITEM SEPARATOR
+        POPUP "行动"
+        BEGIN
+            MENUITEM "&Accept         F3",          IDM_Accept
+            MENUITEM "D&ecline        F4",          IDM_Decline
+            MENUITEM "Re&match        F12",         IDM_Rematch
+            MENUITEM SEPARATOR
+            MENUITEM "Call &Flag      F5",          IDM_CallFlag
+            MENUITEM "&Draw           F6",          IDM_Draw
+            MENUITEM "Ad&journ        F7",          IDM_Adjourn
+            MENUITEM "A&bort          F8",          IDM_Abort
+            MENUITEM "&Resign         F9",          IDM_Resign
+            MENUITEM SEPARATOR
+            MENUITEM "Stop &Observing F10",         IDM_StopObserving
+            MENUITEM "Stop E&xamining F11",         IDM_StopExamining
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&P 暂停游戏\tPause",              IDM_Pause
+    END
+    POPUP "选项"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "常用设定(&G)...",                 IDM_GeneralOptions
+        MENUITEM "棋盘显示设定(&B)...",               IDM_BoardOptions
+        MENUITEM "上下翻转棋盘(&V)\tF2",              IDM_FlipView
+        MENUITEM SEPARATOR
+        MENUITEM "窗口缺省位置",                      IDM_Win_Default_Position
+        MENUITEM SEPARATOR
+        MENUITEM "&ICS...",                     IDM_IcsOptions
+        MENUITEM "字体设定(&F)...",                 IDM_Fonts
+        MENUITEM "全部输出UBB棋局",                   ID_ExportAllUbb
+        MENUITEM "声音设定(&D)...",                 IDM_Sounds
+        MENUITEM SEPARATOR
+        MENUITEM "通讯协议(&U)...",                 IDM_CommPort
+        MENUITEM "&Load Game...",               IDM_LoadOptions
+        MENUITEM "&Save Game...",               IDM_SavePosition
+        MENUITEM "备份棋库",                        IDM_BackUp_Book
+        MENUITEM SEPARATOR
+        MENUITEM "立即保存当前设定(&N)",                IDM_SaveSettings
+        MENUITEM "退出时保存设定(&X)",                 IDM_SaveSettingsOnExit
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "Help &Contents\tF1",          IDM_HELPCONTENTS
+        MENUITEM "Help &Index",                 IDM_HELPSEARCH
+        MENUITEM "How to &Use Help",            ID_HELP_HOWTOUSEHELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Hint...",                    IDM_HELPHELP
+        MENUITEM "&Book...",                    IDM_Book
+        MENUITEM SEPARATOR
+        MENUITEM "关于佳佳象棋...",                   IDM_ABOUT
+    END
+END
+
+IDR_MENU_NOTE MENU
+BEGIN
+    POPUP "NoteMenu"
+    BEGIN
+        MENUITEM "还原",                          ID_NOTEMENU_RESTORE
+        MENUITEM "退出",                          ID_NOTEMENU_EXIT
+    END
+END
+
+IDR_MENU_BaiJu MENU
+BEGIN
+    POPUP "摆棋"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "放置红棋"
+        BEGIN
+            MENUITEM "红兵",                          ID_CJ_Rpawn
+            MENUITEM "红炮",                          ID_CJ_Rpao
+            MENUITEM "红车",                          ID_CJ_Rche
+            MENUITEM "红马",                          ID_CJ_Rma
+            MENUITEM "红相",                          ID_CJ_Rxiang
+            MENUITEM "红仕",                          ID_CJ_Rshi
+        END
+        MENUITEM SEPARATOR
+        POPUP "放置黑棋"
+        BEGIN
+            MENUITEM "黑卒",                          ID_CJ_Bpawn
+            MENUITEM "黑炮",                          ID_CJ_Bpao
+            MENUITEM "黑车",                          ID_CJ_Bche
+            MENUITEM "黑马",                          ID_CJ_Bma
+            MENUITEM "黑象",                          ID_CJ_Bxiang
+            MENUITEM "黑士",                          ID_CJ_Bshi
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "清空棋盘",                        ID_CJ_CLEAR
+        MENUITEM "交换先手",                        ID_CJ_BlackFirst
+        MENUITEM "结束摆局",                        ID_CJ_FINISH
+    END
+END
+
+IDR_MENU_POP MENU
+BEGIN
+    POPUP "正常菜单"
+    BEGIN
+        MENUITEM "电脑红方",                        IDM_CommandX
+        MENUITEM "电脑黑方",                        ID_32813
+        MENUITEM "立即出招",                        IDM_QuickPaste
+        MENUITEM "红棋在上",                        IDM_CommandXLast
+        MENUITEM "分析棋局",                        IDM_SelectAll
+        MENUITEM SEPARATOR
+        MENUITEM "退出(Exit)",                    ID_Menu32817
+    END
+END
+
+IDR_MENU_ICS_BOARD MENU
+BEGIN
+    POPUP "ICS_BOARD"
+    BEGIN
+        MENUITEM "旁观对局 (主窗口)",                  IDM_ICS_OBS_MAIN
+        MENUITEM "加入棋局 (主窗口)",                  IDM_ICS_JOIN_MAIN
+        MENUITEM "口令加入 (主窗口)",                  IDM_ICS_JOIN_W_PASS_MAIN
+        MENUITEM SEPARATOR
+        MENUITEM "旁观对局 (另开窗口)",                 ID_ICS_33059
+        MENUITEM "加入棋局 (另开窗口)",                 0
+        MENUITEM "口令加入 (另开窗口)",                 ID_ICS_33061
+    END
+END
+
+IDR_MENU_BOOK_USE MENU
+BEGIN
+    POPUP "Book_Menu"
+    BEGIN
+        MENUITEM "思考当前步",                       ID_BOOK_33074
+        MENUITEM "走当前步!!",                      ID_BOOK_33076
+        MENUITEM SEPARATOR
+        POPUP "编辑棋库"
+        BEGIN
+            MENUITEM "红方大优",                        ID_33085
+            MENUITEM "红方略优",                        ID_33086
+            MENUITEM "双方均势",                        ID_33087
+            MENUITEM "黑方略优",                        ID_33088
+            MENUITEM "黑方大优",                        ID_33089
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "复制棋步信息",                      ID_BOOK_33080
+        MENUITEM "复制全部信息",                      ID_BOOK_33081
+        MENUITEM SEPARATOR
+        MENUITEM "备份棋库..",                      ID_33094
+    END
+END
+
+IDR_MENU_MAIN MENU
+BEGIN
+    POPUP "右键菜单"
+    BEGIN
+        MENUITEM "局面评估",                        IDM_DebugEval
+        MENUITEM "复制局面FEN",                     IDM_CopyPosition
+        MENUITEM "粘贴局面FEN",                     IDM_PastePosition
+        MENUITEM "分析局面",                        IDT_ANALIZE_FUN
+        MENUITEM "思考局面",                        IDT_COM_RED
+        MENUITEM "红黑交换",                        IDM_FlipView
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+NO_ALT ACCELERATORS
+BEGIN
+    VK_LEFT,        IDM_Backward,           VIRTKEY, NOINVERT
+    VK_RIGHT,       IDM_Forward,            VIRTKEY, NOINVERT
+    VK_NEXT,        IDM_LoadNextGame,       VIRTKEY, NOINVERT
+    VK_NEXT,        IDM_LoadNextPosition,   VIRTKEY, SHIFT, NOINVERT
+    VK_PRIOR,       IDM_LoadPrevGame,       VIRTKEY, NOINVERT
+    VK_PRIOR,       IDM_LoadPrevPosition,   VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      IDM_MoveNow,            VIRTKEY, NOINVERT
+    VK_DELETE,      IDM_RetractMove,        VIRTKEY, NOINVERT
+    VK_HOME,        IDM_Revert,             VIRTKEY, NOINVERT
+    VK_DOWN,        IDM_ToEnd,              VIRTKEY, NOINVERT
+    VK_UP,          IDM_ToStart,            VIRTKEY, NOINVERT
+    VK_END,         IDM_TruncateGame,       VIRTKEY, NOINVERT
+END
+
+GGCHESS ACCELERATORS
+BEGIN
+    VK_F8,          IDM_Abort,              VIRTKEY, NOINVERT
+    VK_F3,          IDM_Accept,             VIRTKEY, SHIFT, CONTROL, ALT, NOINVERT
+    VK_F7,          IDM_Adjourn,            VIRTKEY, NOINVERT
+    VK_LEFT,        IDM_Backward,           VIRTKEY, ALT, NOINVERT
+    VK_F5,          IDM_UBB,                VIRTKEY, NOINVERT
+    "C",            IDM_CopyGame,           VIRTKEY, ALT, NOINVERT
+    "C",            IDM_CopyPosition,       VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F3,          IDM_DebugEval,          VIRTKEY, NOINVERT
+    VK_F4,          IDM_DebugEvalF4,        VIRTKEY, NOINVERT
+    "1",            IDM_DirectCommand1,     VIRTKEY, ALT, NOINVERT
+    "2",            IDM_DirectCommand2,     VIRTKEY, ALT, NOINVERT
+    VK_F6,          IDM_Draw,               VIRTKEY, NOINVERT
+    VK_F2,          IDM_FlipView,           VIRTKEY, NOINVERT
+    VK_RIGHT,       IDM_Forward,            VIRTKEY, ALT, NOINVERT
+    VK_F1,          IDM_HELPCONTENTS,       VIRTKEY, NOINVERT
+    VK_NEXT,        IDM_LoadNextGame,       VIRTKEY, ALT, NOINVERT
+    VK_NEXT,        IDM_LoadNextPosition,   VIRTKEY, SHIFT, ALT, NOINVERT
+    VK_PRIOR,       IDM_LoadPrevGame,       VIRTKEY, ALT, NOINVERT
+    VK_PRIOR,       IDM_LoadPrevPosition,   VIRTKEY, SHIFT, ALT, NOINVERT
+    VK_INSERT,      IDM_MoveNow,            VIRTKEY, ALT, NOINVERT
+    "V",            IDM_PasteGame,          VIRTKEY, ALT, NOINVERT
+    "V",            IDM_PastePosition,      VIRTKEY, SHIFT, ALT, NOINVERT
+    VK_PAUSE,       IDM_Pause,              VIRTKEY, NOINVERT
+    VK_PAUSE,       IDM_Pause,              VIRTKEY, ALT, NOINVERT
+    VK_F12,         IDM_Rematch,            VIRTKEY, NOINVERT
+    VK_F9,          IDM_Resign,             VIRTKEY, NOINVERT
+    VK_DELETE,      IDM_RetractMove,        VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      IDM_Revert,             VIRTKEY, ALT, NOINVERT
+    VK_F11,         IDM_StopExamining,      VIRTKEY, NOINVERT
+    VK_F10,         IDM_StopObserving,      VIRTKEY, NOINVERT
+    VK_DOWN,        IDM_ToEnd,              VIRTKEY, ALT, NOINVERT
+    VK_UP,          IDM_ToStart,            VIRTKEY, ALT, NOINVERT
+    VK_END,         IDM_TruncateGame,       VIRTKEY, ALT, NOINVERT
+    "U",            IDM_UBB,                VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 168, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 9, "System", 0, 0, 0x0
+BEGIN
+    LTEXT           "GGchess 佳佳象棋",-1,46,5,78,8,SS_NOPREFIX
+    LTEXT           "http://www.ggchess.com \n asmchess@126.com",-1,39,15,99,16
+    DEFPUSHBUTTON   "确定",IDOK,59,39,30,11,WS_GROUP
+    CONTROL         "",OPT_TCTime,"Static",SS_BLACKRECT,7,34,157,1
+END
+
+ABOUTBOX2 DIALOGEX 0, 0, 308, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK2,258,161,32,12,WS_GROUP
+    RTEXT           "GGchess for Windows",DLG_TimeControl,210,138,80,8
+    LTEXT           "Copyright 2007-2008 GGchess",201,18,150,151,8
+    LTEXT           "版权所有 http://www.ggchess.com",OPT_TCtext1,16,162,235,13
+    CONTROL         "",OPT_TCTime,"Static",SS_BLACKRECT,18,147,272,1
+    LTEXT           "GGchess 0.1.7",ABOUTBOX_Version,18,138,64,8
+    CONTROL         "galactic",-1,"Static",SS_BITMAP,18,12,15,11
+END
+
+DLG_Analysis DIALOGEX 0, 0, 306, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",OPT_AnalysisText,"RICHEDIT",TCS_RAGGEDRIGHT | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,14,10,276,50
+END
+
+DLG_BoardOptions DIALOGEX 0, 0, 281, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Board Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK2,205,9,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL2,205,30,50,12
+    CONTROL         "&Tiny",OPT_SizeTiny,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,13,50,9
+    CONTROL         "T&eeny",OPT_SizeTeeny,"Button",BS_AUTORADIOBUTTON,15,21,50,9
+    CONTROL         "&Dinky",OPT_SizeDinky,"Button",BS_AUTORADIOBUTTON,15,30,50,9
+    CONTROL         "&Petite",OPT_SizePetite,"Button",BS_AUTORADIOBUTTON,15,38,50,9
+    CONTROL         "Sl&im",OPT_SizeSlim,"Button",BS_AUTORADIOBUTTON,15,47,50,9
+    CONTROL         "&Small",OPT_SizeSmall,"Button",BS_AUTORADIOBUTTON,15,55,50,9
+    CONTROL         "Medi&ocre",OPT_SizeMediocre,"Button",BS_AUTORADIOBUTTON,76,13,50,9
+    CONTROL         "&Middling",OPT_SizeMiddling,"Button",BS_AUTORADIOBUTTON,76,21,50,9
+    CONTROL         "&Average",OPT_SizeAverage,"Button",BS_AUTORADIOBUTTON,76,30,50,9
+    CONTROL         "Mode&rate",OPT_SizeModerate,"Button",BS_AUTORADIOBUTTON,76,38,50,9
+    CONTROL         "Medi&um",OPT_SizeMedium,"Button",BS_AUTORADIOBUTTON,76,47,50,9
+    CONTROL         "Bul&ky",OPT_SizeBulky,"Button",BS_AUTORADIOBUTTON,76,55,50,9
+    CONTROL         "&Large",OPT_SizeLarge,"Button",BS_AUTORADIOBUTTON,140,13,50,9
+    CONTROL         "&Big",OPT_SizeBig,"Button",BS_AUTORADIOBUTTON,140,21,50,9
+    CONTROL         "&Huge",OPT_SizeHuge,"Button",BS_AUTORADIOBUTTON,140,30,50,9
+    CONTROL         "&Giant",OPT_SizeGiant,"Button",BS_AUTORADIOBUTTON,140,38,50,9
+    CONTROL         "&Colossal",OPT_SizeColossal,"Button",BS_AUTORADIOBUTTON,140,47,50,9
+    CONTROL         "Tita&nic",OPT_SizeTitanic,"Button",BS_AUTORADIOBUTTON,140,55,50,9
+    PUSHBUTTON      "Choose...",OPT_ChooseLightSquareColor,144,85,40,13
+    PUSHBUTTON      "Choose...",OPT_ChooseDarkSquareColor,144,102,40,13
+    PUSHBUTTON      "Choose...",OPT_ChooseWhitePieceColor,144,119,40,13
+    PUSHBUTTON      "Choose...",OPT_ChooseBlackPieceColor,144,135,40,13
+    PUSHBUTTON      "Choose...",OPT_ChooseHighlightSquareColor,144,153,40,13
+    PUSHBUTTON      "Choose...",OPT_ChoosePremoveHighlightColor,144,169,40,13
+    PUSHBUTTON      "Defaults",OPT_DefaultBoardColors,118,190,65,13
+    EDITTEXT        OPT_DarkSquareColor,104,102,25,13,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        OPT_LightSquareColor,104,85,25,13,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        OPT_WhitePieceColor,104,119,25,13,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        OPT_BlackPieceColor,104,135,25,13,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        OPT_HighlightSquareColor,104,153,25,13,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    GROUPBOX        "Colors",IDC_STATIC,10,76,185,131
+    EDITTEXT        OPT_PremoveHighlightColor,104,169,25,13,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Light Squares",IDC_STATIC,25,89,60,9
+    LTEXT           "Dark Squares",IDC_STATIC,25,105,60,9
+    LTEXT           "White Pieces",IDC_STATIC,25,122,60,9
+    LTEXT           "Black Pieces",IDC_STATIC,25,140,60,9
+    LTEXT           "Square Highlights",IDC_STATIC,25,156,60,9
+    LTEXT           "Premove Highlights",IDC_STATIC,25,174,70,9
+    GROUPBOX        "Size",IDC_STATIC,10,4,185,63
+    CONTROL         "Monochrome",OPT_Monochrome,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,190,75,9
+    EDITTEXT        OPT_SampleLightSquare,205,93,39,31,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        OPT_SampleDarkSquare,205,140,39,31,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+DLG_Colorize DIALOGEX 0, 0, 216, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ICS Interaction Colors"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Choose Color...",OPT_ChooseColor,25,33,51,12,WS_GROUP
+    CONTROL         "&Bold",OPT_Bold,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,103,12,30,9
+    CONTROL         "&Italic",OPT_Italic,"Button",BS_AUTOCHECKBOX,103,20,30,9
+    CONTROL         "&Underline",OPT_Underline,"Button",BS_AUTOCHECKBOX,103,28,45,9
+    CONTROL         "&Strikeout",OPT_Strikeout,"Button",BS_AUTOCHECKBOX,103,37,42,9
+    DEFPUSHBUTTON   "OK",IDOK2,155,14,31,12,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL2,155,28,31,12
+    CONTROL         "",OPT_Sample,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_GROUP,14,15,75,13,WS_EX_CLIENTEDGE
+END
+
+DLG_CommPort DIALOGEX 0, 0, 227, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Communication Port Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "&Port:",-1,16,15,40,9
+    COMBOBOX        OPT_Port,61,14,55,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Data &Rate:",-1,16,28,40,9,NOT WS_GROUP
+    COMBOBOX        OPT_DataRate,61,26,55,100,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Data &Bits:",-1,16,41,40,9,NOT WS_GROUP
+    COMBOBOX        OPT_Bits,61,39,55,60,CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "P&arity:",-1,16,53,40,9,NOT WS_GROUP
+    COMBOBOX        OPT_Parity,61,51,55,60,CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Stop Bits:",-1,16,66,40,9,NOT WS_GROUP
+    COMBOBOX        OPT_StopBits,61,64,55,60,CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "F&low:",-1,16,78,40,9,NOT WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK2,127,14,40,12
+    PUSHBUTTON      "Cancel",IDCANCEL2,127,30,40,12
+    COMBOBOX        OPT_Flow,61,77,55,60,CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Help",OPT_SerialHelp,127,78,40,12,NOT WS_VISIBLE
+END
+
+DLG_EditComment DIALOGEX 0, 0, 318, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Comment"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK2,66,80,40,12
+    PUSHBUTTON      "Cancel",OPT_CancelComment,114,80,40,12
+    PUSHBUTTON      "&Clear",OPT_ClearComment,162,80,40,12
+    PUSHBUTTON      "&Edit",OPT_EditComment,210,80,40,12
+    CONTROL         "",OPT_CommentText,"RICHEDIT",TCS_VERTICAL | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,9,11,298,66
+END
+
+DLG_EditTags DIALOGEX 0, 0, 189, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Tags"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK2,21,111,40,12
+    PUSHBUTTON      "Cancel",OPT_TagsCancel,69,111,40,12
+    PUSHBUTTON      "&Edit",OPT_EditTags,117,111,40,12
+    CONTROL         "",OPT_TagsText,"RICHEDIT",TCS_HOTTRACK | TCS_VERTICAL | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,13,11,152,97
+END
+
+DLG_Error DIALOGEX 0, 0, 212, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Error"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK2,174,18,16,12
+    ICON            32515,IDC_STATIC,15,16,21,20
+    LTEXT           "Sorry Charlie",OPT_ErrorText,38,15,130,21
+END
+
+DLG_Fonts DIALOGEX 0, 0, 300, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fonts"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,166,190,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,226,190,50,12
+    PUSHBUTTON      "Choose...",OPT_ChooseClockFont,232,26,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseMessageFont,232,52,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseCoordFont,232,77,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseTagFont,232,114,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseCommentsFont,232,139,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseConsoleFont,232,165,45,13
+    PUSHBUTTON      "&Revert to Defaults",OPT_DefaultFonts,26,190,80,13
+    CONTROL         "",OPT_SampleCoordFont,"RICHEDIT",TCS_RAGGEDRIGHT | WS_DISABLED | WS_BORDER,81,73,140,17
+    CONTROL         "",OPT_SampleTagFont,"RICHEDIT",TCS_RAGGEDRIGHT | WS_DISABLED | WS_BORDER,81,109,140,17
+    CONTROL         "",OPT_SampleCommentsFont,"RICHEDIT",TCS_RAGGEDRIGHT | WS_DISABLED | WS_BORDER,81,134,140,17
+    CONTROL         "",OPT_SampleConsoleFont,"RICHEDIT",TCS_RAGGEDRIGHT | WS_DISABLED | WS_BORDER,81,160,140,17
+    LTEXT           "Clocks",OPT_ClockFont,27,26,45,9,NOT WS_GROUP
+    LTEXT           "Messages",OPT_MessageFont,27,52,45,9,NOT WS_GROUP
+    LTEXT           "Coordinates",OPT_CoordFont,27,77,45,9,NOT WS_GROUP
+    LTEXT           "Tags",OPT_EditTagsFont,27,114,45,9,NOT WS_GROUP
+    LTEXT           "Comments",OPT_CommentsFont,27,139,45,9,NOT WS_GROUP
+    LTEXT           "ICS Interaction",OPT_MessageFont5,27,165,50,9,NOT WS_GROUP
+    CONTROL         "",OPT_SampleClockFont,"RICHEDIT",TCS_RAGGEDRIGHT | WS_DISABLED | WS_BORDER,81,22,140,17
+    CONTROL         "",OPT_SampleMessageFont,"RICHEDIT",TCS_RAGGEDRIGHT | WS_DISABLED | WS_BORDER,81,48,140,17
+    GROUPBOX        "Current Board Size",IDC_STATIC,16,14,270,85
+    GROUPBOX        "All Board Sizes",IDC_STATIC,16,101,270,85
+END
+
+DLG_GameList DIALOGEX 0, 0, 335, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Game List"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         OPT_GameListText,13,13,299,110,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Load",OPT_GameListLoad,70,126,40,13
+    PUSHBUTTON      "&Prev",OPT_GameListPrev,118,126,40,13
+    PUSHBUTTON      "&Next",OPT_GameListNext,166,126,40,13
+    PUSHBUTTON      "&Close",OPT_GameListClose,214,126,40,13
+END
+
+DLG_GeneralOptions DIALOGEX 0, 0, 274, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,207,19,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,208,34,50,12
+    CONTROL         "Always on &Top",OPT_AlwaysOnTop,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,18,79,9
+    CONTROL         "Auto &Step",OPT_Autostep,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,30,79,9
+    CONTROL         "Animate &Dragging",OPT_AnimateDragging,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,42,79,9
+    CONTROL         "&Animate Moving",OPT_AnimateMoving,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,54,79,9
+    CONTROL         "Auto &Flag",OPT_AutoFlag,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,65,79,9
+    CONTROL         "Auto Flip &View",OPT_AutoFlipView,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,78,79,9
+    CONTROL         "Auto &Raise Board",OPT_AutoRaiseBoard,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,89,71,9
+    CONTROL         "&Blindfold",OPT_Blindfold,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,101,79,9
+    CONTROL         "&Highlight Dragging",OPT_HighlightDragging,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,113,79,9
+    CONTROL         "Highlight Last &Move",OPT_HighlightLastMove,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,18,79,9
+    CONTROL         "Periodic &Updates",OPT_PeriodicUpdates,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,30,79,9
+    CONTROL         "Ponder &Next Move",OPT_PonderNextMove,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,42,79,9
+    CONTROL         "&Popup Exit Message",OPT_PopupExitMessage,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,54,79,9
+    CONTROL         "Popup Move &Errors",OPT_PopupMoveErrors,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,65,79,9
+    CONTROL         "Show Butt&on Bar",OPT_ShowButtonBar,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,78,79,9
+    CONTROL         "Show &Coordinates",OPT_ShowCoordinates,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,89,79,9
+    CONTROL         "&Show Thinking",OPT_ShowThinking,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,101,79,9
+    CONTROL         "Test &Legality",OPT_TestLegality,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,113,79,9
+END
+
+DLG_IcsOptions DIALOGEX 0, 0, 325, 249
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ICS Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK2,91,220,60,13
+    PUSHBUTTON      "Cancel",IDCANCEL2,171,220,60,13
+    CONTROL         "&Auto Comment",OPT_AutoComment,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,18,63,8
+    CONTROL         "Auto &Observe",OPT_AutoObserve,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,31,63,8
+    CONTROL         "&Get Move List",OPT_GetMoveList,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,44,63,8
+    CONTROL         "&Local Line Editing",OPT_LocalLineEditing,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,56,84,8
+    CONTROL         "&Quiet Play",OPT_QuietPlay,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,69,63,8
+    CONTROL         "&Premove",OPT_Premove,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,18,46,9
+    CONTROL         "&White first move",OPT_PremoveWhite,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,31,67,9
+    EDITTEXT        OPT_PremoveWhiteText,255,28,25,12,ES_AUTOHSCROLL
+    CONTROL         "&Black first move",OPT_PremoveBlack,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,44,66,9
+    EDITTEXT        OPT_PremoveBlackText,255,41,25,12,ES_AUTOHSCROLL
+    CONTROL         "&Sound alarm at",OPT_IcsAlarm,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,69,63,9
+    EDITTEXT        OPT_IcsAlarmTime,246,67,20,12,ES_AUTOHSCROLL
+    LTEXT           "seconds",IDC_STATIC,273,69,28,8
+    PUSHBUTTON      "Choose...",OPT_ChooseShoutColor,107,94,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseSShoutColor,107,110,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseChannel1Color,107,127,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseChannelColor,107,144,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseKibitzColor,107,161,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseTellColor,255,94,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseChallengeColor,255,110,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseRequestColor,255,127,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseSeekColor,255,144,45,13
+    PUSHBUTTON      "Choose...",OPT_ChooseNormalColor,255,161,45,13
+    PUSHBUTTON      "&Choose Background Color...",OPT_ChooseBackgroundColor,20,181,132,14
+    PUSHBUTTON      "&Default ICS Colors",OPT_DefaultColors,168,181,132,14
+    CONTROL         "Do &not colorize messages",OPT_DontColorize,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,113,198,97,9
+    CONTROL         "",OPT_SampleShout,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,20,94,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleSShout,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,20,110,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleChannel1,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,20,127,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleChannel,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,20,144,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleKibitz,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_GROUP,20,161,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleTell,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,168,94,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleChallenge,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,168,110,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleRequest,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,168,127,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleSeek,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,168,144,75,13,WS_EX_CLIENTEDGE
+    CONTROL         "",OPT_SampleNormal,"RICHEDIT",TCS_SCROLLOPPOSITE | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_GROUP,168,161,75,13,WS_EX_CLIENTEDGE
+    GROUPBOX        "Interaction Colors",IDC_STATIC,13,84,295,127
+    GROUPBOX        "Premove",IDC_STATIC,162,8,146,50
+    GROUPBOX        "",IDC_STATIC,13,8,146,75
+    GROUPBOX        "Alarm",IDC_STATIC,162,58,146,25
+END
+
+DLG_IndexNumber DIALOGEX 0, 0, 220, 16
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Inde&x number:",IDC_STATIC,11,4,46,8
+    EDITTEXT        OPT_IndexNumber,53,1,155,12,ES_AUTOHSCROLL
+END
+
+DLG_LoadOptions DIALOGEX 0, 0, 166, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load Game Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Load games with automatic stepping",OPT_Autostep,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,14,11,136,9
+    EDITTEXT        OPT_ASTimeDelay,33,22,28,12,ES_AUTOHSCROLL
+    LTEXT           "seconds per move",OPT_AStext1,67,24,60,8,NOT WS_GROUP
+    PUSHBUTTON      "OK",IDOK2,34,38,40,12,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL2,90,38,40,12
+END
+
+DLG_Question DIALOGEX 0, 0, 221, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "v"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        OPT_QuestionInput,17,47,179,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Enter",IDOK2,146,13,50,12,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL2,146,29,50,12
+    LTEXT           "Enter a chess engine command or just type something stupid that will completely screw things up.",OPT_QuestionText,36,4,101,33
+    ICON            32514,IDC_STATIC,17,20,20,20
+END
+
+DLG_SaveOptions DIALOGEX 0, 0, 156, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Game Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Save games automatically",OPT_Autosave,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,16,13,97,9
+    CONTROL         "Prompt for filename",OPT_AVPrompt,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,30,24,75,9
+    CONTROL         "To file:",OPT_AVToFile,"Button",BS_AUTORADIOBUTTON,30,35,36,9
+    EDITTEXT        OPT_AVFilename,30,47,97,12,ES_AUTOHSCROLL
+    GROUPBOX        "Save Style",801,16,63,125,24,WS_GROUP
+    CONTROL         "PGN",OPT_PGN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,30,72,39,9
+    CONTROL         "Old",OPT_Old,"Button",BS_AUTORADIOBUTTON,85,72,39,9
+    PUSHBUTTON      "OK",IDOK2,30,92,40,12,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL2,86,92,40,12
+    PUSHBUTTON      "Browse...",OPT_AVBrowse,88,35,39,12
+END
+
+DLG_Sound DIALOGEX 0, 0, 266, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sounds"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,201,14,47,12
+    PUSHBUTTON      "Cancel",IDCANCEL,201,29,47,12
+    PUSHBUTTON      "Defaults",OPT_DefaultSounds,201,43,47,12
+    COMBOBOX        CBO_Sounds,54,14,128,110,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "No sound",OPT_NoSound,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,30,47,9
+    CONTROL         "Default beep",OPT_DefaultBeep,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,45,57,9
+    CONTROL         "Built-in sound:",OPT_BuiltInSound,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,59,60,9
+    COMBOBOX        OPT_BuiltInSoundName,80,58,103,109,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Play",OPT_PlaySound,202,57,47,12
+    CONTROL         "WAV file:",OPT_WavFile,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,74,45,9
+    EDITTEXT        OPT_WavFileName,80,72,103,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",OPT_BrowseSound,202,72,47,12
+    LTEXT           "Event:",IDC_STATIC,21,16,26,8
+END
+
+DLG_Startup DIALOGEX 0, 0, 303, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "佳佳象棋"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "与电脑挑战或双引擎对战",OPT_ChessEngine,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,19,25,105,9
+    CONTROL         "连线到网络象棋服务器",OPT_ChessServer,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,19,75,94,9
+    COMBOBOX        OPT_ChessServerName,33,87,194,129,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "仅是查看或编辑棋局",OPT_View,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,19,103,87,9
+    CONTROL         "其它选项",OPT_AnyAdditional,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,125,48,9
+    EDITTEXT        OPT_AdditionalOptions,67,123,221,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,242,22,50,12
+    PUSHBUTTON      "取消",IDCANCEL,242,40,50,12
+    PUSHBUTTON      "帮助",IDM_HELPCONTENTS,242,58,50,12
+    GROUPBOX        "请选择游戏方式",IDC_STATIC,14,11,222,105
+    PUSHBUTTON      "引擎...",IDC_BUTTON_YQA,181,41,36,26
+    EDITTEXT        IDC_EDIT_YQA,37,41,69,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_YQB,37,55,69,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_YQA_XY,108,41,69,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_YQB_XY,108,55,69,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "",IDC_STATIC,32,33,190,38
+END
+
+DLG_TimeControl DIALOGEX 0, 0, 318, 173
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "引擎设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确认",IDOK,94,155,40,12,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,161,155,40,12
+    LTEXT           "每步时间(0无限制)",IDC_STATIC,100,58,66,8
+    EDITTEXT        IDC_TimePerStep,168,56,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "秒,",IDC_STATIC,193,58,12,8
+    EDITTEXT        IDC_SearchDepth,274,56,20,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "包干计时",IDC_IsBaoGan,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,82,48,10
+    EDITTEXT        IDC_BanGanTime,106,79,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "第 1 时间段",IDC_STATIC,63,96,41,8
+    EDITTEXT        IDC_firstClassTime,139,93,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "步",IDC_STATIC,129,96,9,8
+    CONTROL         "分段计时",IDC_IsFenDuanTime,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,94,48,10
+    EDITTEXT        IDC_firstClassStep,106,93,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "分种/局",IDC_STATIC,132,81,28,8
+    LTEXT           "分钟,",IDC_STATIC,162,96,20,8
+    LTEXT           "第 2 时间段",IDC_STATIC,182,96,41,8
+    EDITTEXT        IDC_secondClassTime,261,93,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "步",IDC_STATIC,248,96,9,8
+    EDITTEXT        IDC_secondClassStep,224,93,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "分钟",IDC_STATIC,286,94,17,8
+    LTEXT           "每走一步加",IDC_STATIC,180,81,41,8
+    LTEXT           "秒",IDC_STATIC,248,82,9,8
+    EDITTEXT        IDC_TimeAddPerStep,223,79,20,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "计时设定",IDC_STATIC,5,72,308,37
+    GROUPBOX        "其它",IDC_STATIC,5,109,308,41
+    CONTROL         "后台思考",IDC_IsPonder,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,42,48,10
+    EDITTEXT        IDC_EDIT_YQFILENAME,91,10,84,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "引擎...",IDC_SELECT_YQ,59,10,29,12
+    GROUPBOX        "",IDC_STATIC,5,2,308,70
+    COMBOBOX        IDC_YQUCCI,184,39,82,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "超时判负",IDC_IsLostTimeUp,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,259,80,48,10
+    CONTROL         "引擎 (1)",IDC_RADIO_YQA,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,12,43,10
+    CONTROL         "引擎 (2)",IDC_RADIO_YQB,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,24,43,10
+    CONTROL         "开局库",IDC_IsBook,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,58,42,40,10
+    EDITTEXT        IDC_VersonNo,289,39,20,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "初始指令",IDC_STATIC,10,122,33,8
+    LTEXT           "HASH表大小",IDC_STATIC,12,58,43,8
+    LTEXT           "Ｍ",IDC_STATIC,86,59,9,8
+    EDITTEXT        IDC_HashSize,57,56,26,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "搜索层数(0无限制)",IDC_STATIC,205,58,66,8
+    LTEXT           "层",IDC_STATIC,299,58,9,8
+    GROUPBOX        "",IDC_STATIC,8,5,46,31
+    LTEXT           "引擎协议",IDC_STATIC,149,42,33,8
+    PUSHBUTTON      "棋库...",IDC_BOOK_BUT,178,10,29,12
+    EDITTEXT        IDC_BookFile,210,10,99,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "版本",IDC_STATIC,270,41,17,8
+    EDITTEXT        IDC_initString,44,120,265,12,ES_AUTOHSCROLL
+    LTEXT           "其它指令",IDC_STATIC,9,135,33,8
+    EDITTEXT        IDC_YqOtherString,44,134,265,12,ES_AUTOHSCROLL
+    LTEXT           "引擎目录",IDC_STATIC,58,26,33,8
+    EDITTEXT        IDC_YQ_directory,91,24,218,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+DLG_TypeInMove DIALOGEX 0, 0, 205, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Type in a move"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK2,137,12,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL2,137,26,50,12
+    EDITTEXT        OPT_Move,15,20,109,12,ES_AUTOHSCROLL
+END
+
+DLG_RICH_LOG DIALOGEX 0, 0, 380, 228
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "登录",IDC_ICS_CONNECT,3,170,21,10
+    PUSHBUTTON      "设置>",IDC_ICS_SET,27,167,21,10
+    CONTROL         "转地>",IDC_GO_PLACE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,118,168,21,10
+    CONTROL         "棋桌>",IDC_BUT_ICS_BOARD,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,77,167,21,10
+    ICON            IDI_timeRed,IDC_redTimeIcon,7,3,20,20
+    ICON            IDI_timeBlue,IDC_blueTimeIcon,102,3,20,20
+    LTEXT           "-000:00' 00""",IDC_TIME_RED_TOTAL,32,9,40,8
+    LTEXT           "-000:00' 00""",IDC_TIME_RED_STEP,32,18,40,8
+    LTEXT           "-000:00' 00""",IDC_TIME_BLUE_TOTAL,127,9,40,8
+    LTEXT           "-000:00' 00""",IDC_TIME_BLUE_STEP,127,18,40,8
+    CONTROL         "更多>",IDC_MORE_BUTTON,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,52,166,21,10
+    PUSHBUTTON      "同意对局",IDC_lX_1,3,180,38,14
+    PUSHBUTTON      "局时设置",IDC_LX_2,49,181,38,14
+    PUSHBUTTON      "红黑交换",IDC_LX_3,91,181,38,14
+    PUSHBUTTON      "离开此桌",IDC_LX_8,89,197,38,14
+    PUSHBUTTON      "加入棋桌",IDC_LX_4,135,180,38,14
+    PUSHBUTTON      "握手言和",IDC_LX_5,182,174,38,14
+    PUSHBUTTON      "投子认负",IDC_LX_6,4,198,38,14
+    PUSHBUTTON      "要求仲裁",IDC_LX_7,45,197,38,14
+    LTEXT           "红方:",IDC_TIME_RED_NAME,34,1,64,8
+    LTEXT           "黑方:",IDC_TIME_BLACK_NAME,129,1,57,8
+    CONTROL         "连续打擂",IDC_LX_9,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,131,195,48,15
+    CONTROL         "仅此一桌",IDC_LX_10,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,181,195,48,15
+    CONTROL         "",IDC_LineChart_Score,"Static",SS_WHITERECT | SS_NOTIFY,8,46,196,24
+    CONTROL         "",OPT_ConsoleText,"RichEdit20W",ES_MULTILINE | ES_AUTOVSCROLL | ES_NOHIDESEL | ES_READONLY | ES_NUMBER | WS_BORDER | WS_VSCROLL | WS_TABSTOP,9,86,194,38
+    LISTBOX         IDC_LIST_STEP_MAIN,205,0,67,67,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+DLG_SAVE DIALOGEX 0, 0, 213, 192
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SAVE_BNAME,27,84,69,12,ES_AUTOHSCROLL
+    LTEXT           "红方",IDC_STATIC,7,73,17,8
+    LTEXT           "黑方",IDC_STATIC,7,87,17,8
+    EDITTEXT        IDC_SAVE_RNAME,27,71,69,12,ES_AUTOHSCROLL
+    LTEXT           "Relo",IDC_STATIC,150,73,15,8
+    EDITTEXT        IDC_SAVE_RELO,168,71,31,12,ES_AUTOHSCROLL
+    LTEXT           "Belo",IDC_STATIC,150,86,14,8
+    LTEXT           "结局:",IDC_STATIC,80,147,20,8
+    LTEXT           "地点:",IDC_STATIC,6,147,20,8
+    EDITTEXT        IDC_SAVE_EVENT,26,145,51,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_STEP_RESULT,100,145,68,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "当前结局评价",IDC_STATIC,6,17,202,51,WS_GROUP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SAVE_NOTE_OK,9,113,196,27,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    GROUPBOX        "棋局备注",IDC_dd,5,101,202,42,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "保  存",IDC_STEP_SAVE,54,178,32,12
+    CONTROL         "引擎分析",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,52,162,48,10
+    LTEXT           "编号：",IDC_STATIC,10,4,24,8
+    CONTROL         "红方大优",IDC_VERY_GOOD,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,9,28,37,15
+    CONTROL         "红方略优",IDC_LIT_GOOD,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,48,28,37,15
+    CONTROL         "黑方略优",IDC_LIT_BAD,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,126,28,37,15
+    CONTROL         "黑方大优",IDC_VERY_BAD,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,165,28,37,15
+    CONTROL         "双方均势",IDC_BALANCE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,87,28,37,15
+    EDITTEXT        IDC_YQ_SCORE,164,178,29,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "日期:",IDC_STATIC,146,5,22,8
+    EDITTEXT        IDC_STEP_RTIME,100,71,46,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STEP_BTIME,100,84,46,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "校对",IDC_IS_CHECKED,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,169,162,32,10
+    CONTROL         "学习",IDC_IS_LEARNED,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,135,162,32,10
+    CONTROL         "完成",IDC_IS_FINISHED,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,100,162,32,10
+    EDITTEXT        IDC_SAVE_BELO,168,84,31,12,ES_AUTOHSCROLL
+    CONTROL         "自动保存",IDC_AUTO_READ_NEXT2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,4,161,48,10
+    LTEXT           "00008",IDC_SAVE_PID,35,4,25,8
+    LTEXT           "2007-03-08",IDC_SAVE_DATE,168,5,38,8
+    LTEXT           "001",IDC_SAVE_PLANID,24,182,13,8,NOT WS_VISIBLE
+    LTEXT           " 全局:",IDC_STATIC,170,148,22,8
+    LTEXT           "操作:",IDC_SAVE_TABLE3,63,5,20,8
+    LTEXT           "是",IDC_NOT_FEN_GAME,193,148,9,8
+    PUSHBUTTON      "最后一步",IDC_SAVE_LAST_STEP,53,49,39,14
+    PUSHBUTTON      "学  习",IDC_LEARN_ALL,124,178,32,12
+    PUSHBUTTON      "导  入",IDC_IMPORT_GAME,89,178,32,12
+    CONTROL         "校对",IDC_READ_UNCHECKED,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,137,49,31,14
+    PUSHBUTTON      "更  新",IDC_SAVE_UPDATE,171,49,31,14
+    PUSHBUTTON      "单个局面",IDC_ONE_FACE_SAVE,9,49,40,14
+    PUSHBUTTON      "分  析",IDC_SAVE_ANALIZE,103,49,31,14
+    LTEXT           "桌号:",IDC_STATIC,2,175,20,8,NOT WS_VISIBLE
+    LTEXT           "001",IDC_SAVE_TABLE,24,175,13,8,NOT WS_VISIBLE
+    LTEXT           "计划:",IDC_STATIC,1,182,20,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_SAVE_OPERATOR,84,4,42,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_YQ_SET DIALOGEX 0, 0, 331, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "引擎设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确认",IDOK,257,175,27,12,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,290,175,31,12
+    LTEXT           "每步时间(0无限制)",IDC_STATIC,100,76,66,8
+    EDITTEXT        IDC_TimePerStep,168,74,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "秒,",IDC_STATIC,193,76,12,8
+    EDITTEXT        IDC_SearchDepth,274,74,20,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "包干计时",IDC_IsBaoGan,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,100,48,10
+    EDITTEXT        IDC_BanGanTime,106,96,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "第 1 时间段",IDC_STATIC,63,113,41,8
+    EDITTEXT        IDC_firstClassTime,139,110,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "步",IDC_STATIC,130,113,9,8
+    EDITTEXT        IDC_firstClassStep,106,110,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "分钟/局",IDC_STATIC,132,99,28,8
+    LTEXT           "分钟,",IDC_STATIC,162,113,20,8
+    LTEXT           "第 2 时间段",IDC_STATIC,182,113,41,8
+    EDITTEXT        IDC_secondClassTime,260,110,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "步",IDC_STATIC,248,113,9,8
+    EDITTEXT        IDC_secondClassStep,224,110,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "分钟",IDC_STATIC,286,113,17,8
+    LTEXT           "每走一步加",IDC_STATIC,180,99,41,8
+    LTEXT           "秒",IDC_STATIC,248,99,9,8
+    EDITTEXT        IDC_TimeAddPerStep,223,96,20,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "计时设定",IDC_STATIC,5,90,321,37
+    GROUPBOX        "",IDC_STATIC,6,2,321,65
+    COMBOBOX        IDC_YQ_LIST,78,9,80,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "超时判负",IDC_IsLostTimeUp,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,260,97,48,10
+    CONTROL         "引擎 (1)",IDC_RADIO_YQA,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,12,43,10
+    CONTROL         "引擎 (2)",IDC_RADIO_YQB,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,24,43,10
+    CONTROL         "开局库",IDC_IsBook,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,207,27,40,10
+    LTEXT           "初始指令",IDC_STATIC,9,41,33,8
+    LTEXT           "HASH表大小",IDC_STATIC,12,76,43,8
+    LTEXT           "Ｍ",IDC_STATIC,86,77,9,8
+    EDITTEXT        IDC_HashSize,57,74,26,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "搜索层数(0无限制)",IDC_STATIC,205,76,66,8
+    LTEXT           "层",IDC_STATIC,299,76,9,8
+    GROUPBOX        "",IDC_STATIC,8,5,47,31
+    LTEXT           "当前",IDC_STATIC,59,12,17,8
+    PUSHBUTTON      "添加",IDC_YQ_ADD,10,175,25,12
+    LTEXT           "协议",IDC_STATIC,161,12,17,8
+    EDITTEXT        IDC_initString,43,39,38,12,ES_AUTOHSCROLL
+    LTEXT           "其它指令",IDC_STATIC,85,41,33,8
+    EDITTEXT        IDC_YqOtherString,121,39,46,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,5,67,321,22
+    COMBOBOX        IDC_YQUCCI,179,10,143,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删除",IDC_DELETE_YQ,39,175,25,12,WS_DISABLED
+    EDITTEXT        IDC_YQ_NAME,78,24,59,12,ES_AUTOHSCROLL
+    LTEXT           "名称",IDC_STATIC,59,26,17,8
+    LTEXT           "线程(SMP)",IDC_STATIC,140,27,36,8
+    CONTROL         "分段计时",IDC_IsFenDuanTime,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,112,48,10
+    LTEXT           "相对路径",IDC_STATIC,9,55,33,8
+    EDITTEXT        IDC_YQ_PATH,43,53,252,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "引擎程序",IDC_STATIC,174,41,33,8
+    EDITTEXT        IDC_YQ_PROGRAME,209,39,112,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "引擎其它设置",IDC_STATIC,5,128,321,37
+    LTEXT           "重复判定",IDC_STATIC,65,137,33,8
+    COMBOBOX        IDC_YQ_LIST2,101,149,33,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "自然限着",IDC_STATIC,65,151,33,8
+    CONTROL         "调试引擎",IDC_IsEGB2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,150,48,10
+    COMBOBOX        IDC_YQ_LIST7,101,135,33,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "联赛计划>>",IDOK2,98,175,49,12,WS_GROUP
+    PUSHBUTTON      "缺省",IDC_BOOK_BUT3,69,175,25,12
+    PUSHBUTTON      "加载",ID_LOAD_SET_YQ,207,175,25,12,WS_DISABLED | WS_GROUP
+    LTEXT           "子力",IDC_STATIC,137,152,17,8
+    LTEXT           "MPV",IDC_STATIC,199,151,14,8
+    LTEXT           "位置",IDC_STATIC,197,137,17,8
+    LTEXT           "攻杀",IDC_STATIC,137,138,17,8
+    PUSHBUTTON      "更新",ID_UPDATE_SET_ONLY,173,175,25,12,WS_GROUP
+    EDITTEXT        IDC_Table,301,52,20,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,156,135,21,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,179,134,11,14
+    EDITTEXT        IDC_EDIT7,156,149,21,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,179,148,11,14
+    EDITTEXT        IDC_EDIT8,216,134,21,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,239,134,11,14
+    EDITTEXT        IDC_EDIT9,216,149,21,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,239,148,11,14
+    COMBOBOX        IDC_YQ_SMP_LIST,177,25,25,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "使用回合数:",IDC_STATIC,248,28,46,8
+    COMBOBOX        IDC_YQ_LIST_BOOK_NUM,294,24,25,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_LiSai_Plan DIALOGEX 0, 0, 366, 239
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "联赛计划"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,225,216,50,14
+    CONTROL         "",IDC_QK_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,17,275,56
+    GROUPBOX        "联赛计划列表",IDC_STATIC,6,8,354,94
+    PUSHBUTTON      "删除计划",IDC_BUTTON1,294,55,50,14
+    GROUPBOX        "计划选项",IDC_STATIC,5,104,354,35
+    CONTROL         "",IDC_QK_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,9,152,281,56
+    GROUPBOX        "联赛棋局列表",IDC_STATIC,6,142,354,71
+    PUSHBUTTON      "导出棋局",IDC_BUTTON4,295,156,50,14
+    PUSHBUTTON      "导出所有",IDC_BUTTON5,295,174,50,14
+    PUSHBUTTON      "联赛结果",IDC_BUTTON6,294,18,50,14
+    PUSHBUTTON      "添加计划",IDC_BUTTON7,294,36,50,14
+    LTEXT           "联赛局数",IDC_STATIC,105,123,33,8
+    EDITTEXT        IDC_EDIT1,141,121,15,14,ES_AUTOHSCROLL
+    CONTROL         "循环赛",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,15,123,40,10
+    CONTROL         "淘汰赛",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,60,123,40,10
+    LTEXT           "优胜引擎",IDC_STATIC,12,84,33,8
+    EDITTEXT        IDC_EDIT3,49,81,84,14,ES_AUTOHSCROLL
+    LTEXT           "总计对局",IDC_STATIC,144,84,33,8
+    EDITTEXT        IDC_EDIT4,182,81,36,14,ES_AUTOHSCROLL
+    LTEXT           "已完成",IDC_STATIC,226,85,25,8
+    EDITTEXT        IDC_EDIT5,253,82,36,14,ES_AUTOHSCROLL
+    LTEXT           "剩下",IDC_STATIC,295,84,17,8
+    DEFPUSHBUTTON   "OK",IDOK,69,216,50,14
+    EDITTEXT        IDC_EDIT6,314,80,36,14,ES_AUTOHSCROLL
+    GROUPBOX        "联赛形式",IDC_STATIC,10,113,91,24
+    CONTROL         "快赛棋",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,171,123,40,10
+    CONTROL         "慢棋赛",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,214,123,40,10
+    GROUPBOX        "计时方式",IDC_STATIC,164,112,188,24
+    CONTROL         "第一引擎设置",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,257,123,64,10
+END
+
+DLG_ICS_Count DIALOGEX 0, 0, 244, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "连线帐号设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "增加帐号",ID_Count_Add,182,17,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,145,50,14
+    COMBOBOX        IDC_NETTYPE_LIST,15,89,84,72,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "编号:",IDC_STATIC,105,91,20,8
+    COMBOBOX        IDC_ICS_COUNT_LIST,13,17,84,81,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ICS_PASSWORD,126,34,40,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,103,38,17,8
+    EDITTEXT        IDC_ICS_USER,43,34,52,14,ES_AUTOHSCROLL
+    LTEXT           "用户名:",IDC_STATIC,12,38,28,8
+    GROUPBOX        "帐号类别",IDC_STATIC,7,79,229,61
+    EDITTEXT        IDC_ICS_NET_HOST,35,105,132,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "网址:",IDC_STATIC,14,108,20,8
+    EDITTEXT        IDC_ICS_NET_ID,127,88,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ICS_NET_TYPE,193,87,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "类型:",IDC_STATIC,171,90,20,8
+    EDITTEXT        IDC_ICS_NET_PORT,193,105,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "端口:",IDC_STATIC,171,108,20,8
+    EDITTEXT        IDC_ICS_NET_INFO,35,122,198,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "说明:",IDC_STATIC,13,125,20,8
+    GROUPBOX        "用户帐号",IDC_STATIC,7,7,229,65
+    LTEXT           "编号:",IDC_STATIC,104,20,20,8
+    EDITTEXT        IDC_ICS_COUNT_NO,126,17,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ICS_COUNT_INFO,50,52,180,14,ES_AUTOHSCROLL
+    LTEXT           "帐号简介:",IDC_STATIC,11,57,36,8
+    DEFPUSHBUTTON   "OK",IDOK,46,145,50,14
+    DEFPUSHBUTTON   "删除帐号",ID_Count_Del,182,34,50,14
+END
+
+IDD_GO_PLACE DIALOGEX 0, 0, 246, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请选择一个地方"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Button1",IDC_DIR_1,166,39,76,34,BS_MULTILINE
+    PUSHBUTTON      "Button3",IDC_DIR_4,85,3,76,34,BS_MULTILINE
+    PUSHBUTTON      "Button13",IDC_DIR_2,85,75,76,34,BS_MULTILINE
+    PUSHBUTTON      "Button14",IDC_DIR_3,4,39,76,34,BS_MULTILINE
+    PUSHBUTTON      "Button15",IDC_DIR_6,166,75,76,34,BS_MULTILINE
+    PUSHBUTTON      "Button16",IDC_DIR_7,4,75,76,34,BS_MULTILINE
+    PUSHBUTTON      "Button17",IDC_DIR_8,4,3,76,34,BS_MULTILINE
+    PUSHBUTTON      "Button18",IDC_DIR_5,166,3,76,34,BS_MULTILINE
+    PUSHBUTTON      "树型地图>>",IDC_DIR_9,85,39,76,34,BS_MULTILINE
+END
+
+DLG_ICS_TABLE DIALOGEX 0, 0, 302, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "棋局列表"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "对阵列表",IDCANCEL,3,21,50,14,WS_DISABLED
+    COMBOBOX        IDC_COMBO_SPEAK,3,3,48,170,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ICS_USER_LIST,53,3,59,156,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,132,4,128,167,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_BUTTON1,114,3,15,14
+    PUSHBUTTON      "发送",IDC_BUTTON4,263,4,29,14
+    CONTROL         "",IDC_LIST_BOARD,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,3,37,292,171
+    PUSHBUTTON      "上一关",IDC_PREV_STAGE,64,20,32,14
+    PUSHBUTTON      "打擂",IDC_DALEI,263,21,29,14
+    PUSHBUTTON      "下一关",IDC_NEXT_STAGE,219,21,30,14
+    LTEXT           "快 棋 赛 对 阵 表",IDC_ICS_STAGE,126,24,58,8
+END
+
+DLG_OBS_BOARD DIALOGEX 0, 0, 387, 231
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "椹局"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "-00:00:00",IDC_OBS_RTOTAL,213,9,33,8
+    LTEXT           "-00:00:00",IDC_OBS_BSTEP,278,16,33,8
+    LTEXT           "-00:00:00",IDC_OBS_BTOTAL,278,8,33,8
+    LTEXT           "-00:00:00",IDC_OBS_RSTEP,213,17,33,8
+    PUSHBUTTON      "同意对局",IDC_BUTTON1,3,197,38,14
+    PUSHBUTTON      "局时设置",IDC_BUTTON2,41,197,38,14
+    PUSHBUTTON      "红黑交换",IDC_BUTTON3,79,197,38,14
+    PUSHBUTTON      "离开此桌",IDC_BUTTON4,117,197,38,14
+    PUSHBUTTON      "站起观战",IDC_BUTTON5,155,197,38,14
+    PUSHBUTTON      "加入棋桌",IDC_BUTTON6,193,197,38,14
+    PUSHBUTTON      "保存对局",IDC_BUTTON8,231,197,38,14
+    PUSHBUTTON      "握手言和",IDC_BUTTON9,269,197,38,14
+    PUSHBUTTON      "投子认负",IDC_BUTTON7,307,197,38,14
+    PUSHBUTTON      "要求仲裁",IDC_BUTTON13,345,197,38,14
+    PUSHBUTTON      "｜＜＜",IDC_BUTTON14,3,213,38,14
+    PUSHBUTTON      "＜＜",IDC_BUTTON10,41,213,38,14
+    PUSHBUTTON      "＞＞",IDC_BUTTON11,79,213,38,14
+    PUSHBUTTON      "＞＞｜｜",IDC_BUTTON15,117,213,38,14
+    PUSHBUTTON      "使用引擎",IDC_BUTTON16,155,213,38,14
+    PUSHBUTTON      "引擎设置",IDC_BUTTON17,193,213,38,14
+    PUSHBUTTON      "后台思考",IDC_BUTTON12,231,213,38,14
+    PUSHBUTTON      "====",IDC_BUTTON18,269,213,38,14
+    PUSHBUTTON      "====",IDC_BUTTON19,307,213,38,14
+    PUSHBUTTON      "====",IDC_BUTTON20,345,213,38,14
+    CONTROL         "",IDC_OBS_USER_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,189,127,181,46
+    PUSHBUTTON      "发言",IDC_OBS_BUT_SEND,358,176,22,14
+    EDITTEXT        IDC_OBS_USER_INPUT,190,174,160,14,ES_AUTOHSCROLL
+    ICON            IDI_timeRed,IDC_redTimeIcon,193,8,20,20
+    ICON            IDI_timeBlue,IDC_blueTimeIcon,257,7,20,20
+    GROUPBOX        "",IDC_OBS_GROUP_LEFT,2,0,383,193
+    LTEXT           "姓名 等级(1800)",IDC_OBS_RED_INFO,197,31,56,8
+    LTEXT           "姓名 等级(1800)",IDC_OBS_BLUE_INFO,261,31,56,8
+    LTEXT           "比分 0:0",IDC_OBS_SCORE,334,31,30,8
+    LISTBOX         IDC_OBS_STEPLIST,319,5,63,28,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_OBS_YQINFO,202,46,175,34,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LISTBOX         IDC_OBS_ICS_INFO,203,84,175,34,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_FIRST_DIAG DIALOGEX 0, 0, 272, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Unregistered version(未注册版)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "退出",ID_EXIT,53,82,50,14
+    PUSHBUTTON      "Email",IDC_BUYNOW,147,82,50,14
+    LTEXT           "对不起，本软件还没有注册成功！！\n码请将下面的机器码发给申请注册\nhttp://www.ggchess.com\nasmchess@126.com",IDC_TEXT_REG_INFO,61,11,136,32
+    EDITTEXT        IDC_HD_ID,21,50,230,14,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_SIDE_WIN DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "日志信息窗口"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,198,155,50,14
+    PUSHBUTTON      "取消",IDCANCEL,252,155,50,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP                  "toolbar.bmp"
+IDR_TOOLBAR1            BITMAP                  "toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR 16, 16
+BEGIN
+    BUTTON      IDT_NEW
+    BUTTON      IDT_SAVE_GAME
+    BUTTON      IDT_ToStart
+    BUTTON      IDT_Backward
+    BUTTON      IDT_Forward
+    BUTTON      IDT_ToEnd
+    BUTTON      IDT_COM_RED
+    BUTTON      IDT_COM_BLUE
+    BUTTON      IDT_Stop
+    BUTTON      IDT_HUIQI
+    BUTTON      IDT_YQ_SET
+    BUTTON      IDT_PONDER
+    BUTTON      IDT_FLIP
+    BUTTON      IDT_ANALIZE_FUN
+END
+
+IDR_TOOLBAR1 TOOLBAR 65, 68
+BEGIN
+    BUTTON      ID_BUTTON33101
+    BUTTON      ID_BUTTON33102
+    BUTTON      ID_BUTTON33103
+    BUTTON      ID_BUTTON33104
+    BUTTON      ID_BUTTON33105
+    BUTTON      ID_BUTTON33106
+    BUTTON      ID_BUTTON33107
+    SEPARATOR
+    BUTTON      ID_BUTTON33108
+    BUTTON      ID_BUTTON33109
+    BUTTON      ID_BUTTON33110
+    BUTTON      ID_BUTTON33111
+    BUTTON      ID_BUTTON33112
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 53
+    END
+
+    DLG_BoardOptions, DIALOG
+    BEGIN
+    END
+
+    DLG_Colorize, DIALOG
+    BEGIN
+    END
+
+    DLG_Error, DIALOG
+    BEGIN
+    END
+
+    DLG_GameList, DIALOG
+    BEGIN
+        VERTGUIDE, 214
+    END
+
+    DLG_GeneralOptions, DIALOG
+    BEGIN
+    END
+
+    DLG_IcsOptions, DIALOG
+    BEGIN
+    END
+
+    DLG_IndexNumber, DIALOG
+    BEGIN
+    END
+
+    DLG_LoadOptions, DIALOG
+    BEGIN
+    END
+
+    DLG_Question, DIALOG
+    BEGIN
+    END
+
+    DLG_SaveOptions, DIALOG
+    BEGIN
+    END
+
+    DLG_Sound, DIALOG
+    BEGIN
+    END
+
+    DLG_Startup, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 144
+    END
+
+    DLG_TimeControl, DIALOG
+    BEGIN
+    END
+
+    DLG_TypeInMove, DIALOG
+    BEGIN
+    END
+
+    DLG_RICH_LOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 376
+        BOTTOMMARGIN, 224
+    END
+
+    DLG_SAVE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 210
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_YQ_SET, DIALOG
+    BEGIN
+        RIGHTMARGIN, 330
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_LiSai_Plan, DIALOG
+    BEGIN
+        RIGHTMARGIN, 360
+        BOTTOMMARGIN, 236
+    END
+
+    DLG_ICS_Count, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_GO_PLACE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 245
+        BOTTOMMARGIN, 112
+    END
+
+    DLG_ICS_TABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 299
+        BOTTOMMARGIN, 208
+    END
+
+    DLG_OBS_BOARD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 386
+    END
+
+    IDD_FIRST_DIAG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 267
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_SIDE_WIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "GGchess"
+    IDC_GGCHESS             "GGCHESS"
+END
+
+STRINGTABLE
+BEGIN
+    IDT_CORRECT             "校对棋局"
+    IDT_COM_RED             "使用引擎第 1 个引擎走当前的局面"
+    IDT_ToStart             "后退到棋局开始"
+    IDT_Backward            "后退一步"
+    IDT_Forward             "前进一步"
+    IDT_ToEnd               "快进到棋局对尾"
+    IDT_COM_BLUE            "使用引擎第 2 个引擎走当前的局面"
+END
+
+STRINGTABLE
+BEGIN
+    IDT_FEN_GAME            "摆残局，排局"
+    IDT_ANALIZE             "让引擎分析当前的局面形势"
+    IDT_HUIQI               "我要悔棋..."
+    IDT_NEW                 "新建棋局"
+    IDT_CANJU               "摆残局"
+END
+
+STRINGTABLE
+BEGIN
+    IDT_FLIP                "上下翻转棋盘"
+END
+
+STRINGTABLE
+BEGIN
+    IDT_Stop                "让引擎停止思考，并立即出步"
+    IDT_pause               "暂停游戏"
+END
+
+STRINGTABLE
+BEGIN
+    IDT_YQ_SET              "加载，更换引擎,设置时间等"
+    IDT_PONDER              "打开或关闭后台思考"
+    IDT_SAVE_GAME           "打开保存棋局对话框"
+END
+
+STRINGTABLE
+BEGIN
+    IDT_EVAL                "输出所有的局面的评估到剪贴板"
+    IDT_ADD_DEPTH           "如果设定的层数,按下可加大引擎的思考层数"
+    IDT_SUB_DEPTH           "如果设定的层数,按下可减少引擎的思考层数"
+END
+
+STRINGTABLE
+BEGIN
+    IDT_ANALIZE_FUN         "按下可进入分析模式"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_Win_Default_Position "窗口缺省位置"
+END
+
+STRINGTABLE
+BEGIN
+    IDT_auto                "自动左右对下"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

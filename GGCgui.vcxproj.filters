@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\开局库">
+      <UniqueIdentifier>{967ddc2e-8edd-4299-8088-266056fb2129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\联网">
+      <UniqueIdentifier>{beeebf05-6efc-46fa-9e47-22379870bb5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\数据库">
+      <UniqueIdentifier>{11eb9b2b-556e-46d1-abb0-ff3c54e9a8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\显示">
+      <UniqueIdentifier>{e9af1460-3440-4876-85df-4227900b7f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\引擎">
+      <UniqueIdentifier>{588b8324-9c5e-46f1-9ab5-7e26103779b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\游戏">
+      <UniqueIdentifier>{1ea503d6-b726-467c-8078-8ef5eccfbc36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\notUseNow">
+      <UniqueIdentifier>{48754108-013f-4922-9c36-c364020fb427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\主程序">
+      <UniqueIdentifier>{52a2bd0e-b50e-469e-a0a0-51dba14e7d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\对话框">
+      <UniqueIdentifier>{885cb2b0-b413-4ac0-9101-bc39bc2e9b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\导入棋局">
+      <UniqueIdentifier>{32d54ffc-ac60-4254-a0ae-8343f2af96dd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend_ok.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BerKeley.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bk_book.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="book_common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="captureFace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="com_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog_Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DispCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dis_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg_ICS_Count_Set.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DLG_LOG_DISPLAY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doard_Display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportAllToUbb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Feature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FeedMoveToProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileWR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FindOnlyFace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEnds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOther.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameReset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GetNextChar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleMachineMove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleMachineQB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleMachineQH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleTableIcsMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HDC_Function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ICS_Board_List.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ICS_Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InitBackEnd1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InitBackEnd2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InitBackEnd3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InitChessProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="isFourTypeChessCapture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="isTrueCap_ByDirect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Is_Can_Move.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Is_Protect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Is_True_Cap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadGameDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MailGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mersenne.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moves.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="move_evasion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="move_gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mysql_chess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mysql_WEB_chess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NextMatchGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObsBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenFileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaseDispMoveToUCCI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseOneMove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="position.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreGen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestionDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Read_From_ICS_mxq_CN140.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Read_From_ICS_mxq_CN183.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Read_From_ICS_mxq_EN140.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Read_From_ICS_mxq_EN183.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReceiveFromProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repeat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResurrectChessProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="see_draw_20081016.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="see_draw_old.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="see_move_new.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="see_move_old.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SendBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SendControlParameterToCps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SendMoveToProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SendTimeControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SendTimeReMaining.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SendToProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetGameInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SqliteCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SqliteSettingData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SqlSaveGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StartChessProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StartupDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StepList_Dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stringFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timeDisplay_Dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeInMove_Dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="woptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XqlToSqlite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="YinQinCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zobrist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="主程序.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="佳佳引擎.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="保存窗口.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="保存窗口1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="剪贴板.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="奇兵引擎.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="字体.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="导出棋库棋局.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="工具条.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="引擎事件.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="引擎分析.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="引擎设置.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="旋风105.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="日志窗口.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="时间.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="棋库窗口.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="状态栏.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="自动学习.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="自动用引擎校验局面.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="菜单.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="让引擎思考.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="让引擎进入后台.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="象眼引擎.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDialog.cpp">
+      <Filter>Source Files\对话框</Filter>
+    </ClCompile>
+    <ClCompile Include="asprotect.cpp">
+      <Filter>Source Files\notUseNow</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisDialog.cpp">
+      <Filter>Source Files\notUseNow</Filter>
+    </ClCompile>
+    <ClCompile Include="MxqToSqlite.cpp">
+      <Filter>Source Files\导入棋局</Filter>
+    </ClCompile>
+    <ClCompile Include="PgnToSqlite.cpp">
+      <Filter>Source Files\导入棋局</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sqlite3.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="resource.hm">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="UpgradeLog.htm" />
+    <None Include="UpgradeLog2.htm" />
+    <None Include="debug\BuildLog.htm" />
+    <None Include="release\BuildLog.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="chess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chess_function_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chess_function_disp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GGchess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pregen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="函数定义.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="定义.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="常量.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="枚举.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="结构.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GGchess.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

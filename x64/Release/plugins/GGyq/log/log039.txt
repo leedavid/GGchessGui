@@ -1,0 +1,40 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go infinite
+
+stop
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go infinite
+
+stop
+
+fen 5a2C/3ka4/7C1/9/9/9/3n2Rn1/4B4/3rA4/2B1KA3 b - - 0 1 moves
+
+go infinite
+
+stop
+
+fen 3k2b2/4P4/rc7/p8/9/1R7/9/9/9/4K4 w - - 0 1 moves
+
+go infinite
+
+stop
+
+fen 2bak4/4a1R1C/2n1b2cn/p1p1pNp2/3NP3p/2P3P2/PR6P/4C3B/3rA4/2B1KA1rc w - - 0 1 moves
+
+go infinite
+
+stop
+
+fen 3k5/1R7/3ara3/9/6n2/6B2/9/4C4/4AK3/c5B2 w - - 0 1 moves
+
+go infinite
+
+stop
+

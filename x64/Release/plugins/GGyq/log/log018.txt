@@ -1,0 +1,106 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+cmd bookmove b2e2
+
+cmd bookmove b0c2
+
+cmd bookmove a0b0
+
+cmd bookmove c3c4
+
+cmd bookmove h0i2
+
+cmd bookmove h2g2
+
+cmd bookmove i0i1
+
+cmd bookmove i1f1
+
+cmd bookmove b0b6
+
+cmd bookmove b6c6
+
+cmd bookmove c6d6
+
+cmd bookmove g2g1
+
+cmd bookmove f1f3
+
+cmd bookmove e3e4
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3
+
+go wtime 883719 btime 887000
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3 g3g4 h3h6
+
+go wtime 867000 btime 886828 ponder
+
+ponderhit
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3 g3g4 h3h6 d6d8 h6h8
+
+go wtime 839999 btime 886641 ponder
+
+ponderhit
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3 g3g4 h3h6 d6d8 h6h8 f3f8 e8d9
+
+go wtime 830000 btime 886890 ponder
+
+ponderhit
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3 g3g4 h3h6 d6d8 h6h8 f3f8 e8d9 f8f3 f9e8
+
+go wtime 820000 btime 886203 ponder
+
+ponderhit
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3 g3g4 h3h6 d6d8 h6h8 f3f8 e8d9 f8f3 f9e8 f3f8 e8f9
+
+go wtime 818000 btime 877922 ponder
+
+ponderhit
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3 g3g4 h3h6 d6d8 h6h8 f3f8 e8d9 f8f3 f9e8 f3f8 e8f9 d8d3 f9e8
+
+go wtime 806000 btime 877250 ponder
+
+ponderhit
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3 g3g4 h3h6 d6d8 h6h8 f3f8 e8d9 f8f3 f9e8 f3f8 e8f9 d8d3 f9e8 d3d8 e8f9
+
+go wtime 790000 btime 877250 ponder
+
+ponderhit
+
+fen 2b1ka3/c3a4/2n1b2c1/p2Rp3r/1r4p1p/2P6/P3PRP1n/2N1C3N/6C2/2BAKAB2 w - - 0 1 moves e3e4 h7h3 g3g4 h3h6 d6d8 h6h8 f3f8 e8d9 f8f3 f9e8 f3f8 e8f9 d8d3 f9e8 d3d8 e8f9 f8f3 f9e8
+
+go wtime 772985 btime 877687 ponder
+

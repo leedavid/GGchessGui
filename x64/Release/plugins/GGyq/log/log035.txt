@@ -1,0 +1,50 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+fen 3akab2/9/4bR3/2R1p3p/9/9/r3P3P/2CrB4/9/3AKA3 b - - 0 1 moves
+
+go wtime 283000 btime 720000
+
+stop
+
+fen 3akab2/9/4bR3/2R1p3p/9/9/r3P3P/2C1r4/9/3AKA3 w - - 0 1 moves f0e1
+
+go wtime 282359 btime 712000 ponder
+
+stop
+
+fen 3akab2/9/4bR3/2R1p3p/9/9/r3P3P/2C1r4/9/3AKA3 w - - 0 1 moves d0e1
+
+go wtime 280000 btime 711250
+
+fen 3akab2/9/4bR3/2R1p3p/9/9/r3P3P/2C1r4/9/3AKA3 w - - 0 1 moves d0e1 d9e8 f7f4
+
+go wtime 279234 btime 700000 ponder
+
+ponderhit
+
+fen 3akab2/9/4bR3/2R1p3p/9/9/r3P3P/2C1r4/9/3AKA3 w - - 0 1 moves d0e1 d9e8 f7f4 i6i5 e3e4
+
+go wtime 254000 btime 698250 ponder
+
+stop
+
+fen 3akab2/9/4bR3/2R1p3p/9/9/r3P3P/2C1r4/9/3AKA3 w - - 0 1 moves d0e1 d9e8 f7f4 i6i5 f4f5
+
+go wtime 229000 btime 697391
+
+fen 3akab2/9/4bR3/2R1p3p/9/9/r3P3P/2C1r4/9/3AKA3 w - - 0 1 moves d0e1 d9e8 f7f4 i6i5 f4f5 a3d3 f5a5
+
+go wtime 228219 btime 685985 ponder
+
+ponderhit
+
+fen 4kab2/4a4/4b4/2R1p4/R7p/9/3rr3P/2C6/4A4/4KA3 w - - 0 1 moves c2b2
+
+go wtime 225172 btime 672000 ponder
+

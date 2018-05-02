@@ -1,0 +1,44 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+cmd bookmove g6g5
+
+cmd bookmove h9g7
+
+cmd bookmove b9c7
+
+cmd bookmove a9b9
+
+cmd bookmove b7b3
+
+cmd bookmove b3c3
+
+fen rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1 moves c3c4 g6g5 b0c2 h9g7 b2a2 b9c7 a0b0 a9b9 h0g2 b7b3 h2h6 b3c3 h6g6
+
+go wtime 887000 btime 891610
+

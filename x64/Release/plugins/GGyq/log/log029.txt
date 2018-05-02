@@ -1,0 +1,216 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+cmd bookmove h2e2
+
+cmd bookmove h0g2
+
+cmd bookmove i0h0
+
+cmd bookmove g3g4
+
+cmd bookmove b0a2
+
+cmd bookmove b2c2
+
+cmd bookmove a0a1
+
+cmd bookmove c2c5
+
+cmd bookmove a1b1
+
+cmd bookmove c5c8
+
+cmd bookmove d0e1
+
+fen r1bakabr1/9/1c4nc1/4p1p1p/p1C6/6P2/n1P1P3P/N3C1N2/R8/2BAKABR1 b - - 0 1 moves a5a4 a1b1 a9a5 c5c8 b7c7 d0e1 h7h3
+
+go wtime 894938 btime 757000
+
+fen r1bakabr1/9/1c4nc1/4p1p1p/p1C6/6P2/n1P1P3P/N3C1N2/R8/2BAKABR1 b - - 0 1 moves a5a4 a1b1 a9a5 c5c8 b7c7 d0e1 h7h3 b1b7 c7e7
+
+go wtime 866000 btime 756844 ponder
+
+ponderhit
+
+fen r1bakabr1/9/1c4nc1/4p1p1p/p1C6/6P2/n1P1P3P/N3C1N2/R8/2BAKABR1 b - - 0 1 moves a5a4 a1b1 a9a5 c5c8 b7c7 d0e1 h7h3 b1b7 c7e7 c8c6 h3g3
+
+go wtime 864172 btime 677000 ponder
+
+ponderhit
+
+fen r1bakabr1/9/1c4nc1/4p1p1p/p1C6/6P2/n1P1P3P/N3C1N2/R8/2BAKABR1 b - - 0 1 moves a5a4 a1b1 a9a5 c5c8 b7c7 d0e1 h7h3 b1b7 c7e7 c8c6 h3g3 b7c7 c9a7
+
+go wtime 863000 btime 656281 ponder
+
+ponderhit
+
+fen r1bakabr1/9/1c4nc1/4p1p1p/p1C6/6P2/n1P1P3P/N3C1N2/R8/2BAKABR1 b - - 0 1 moves a5a4 a1b1 a9a5 c5c8 b7c7 d0e1 h7h3 b1b7 c7e7 c8c6 h3g3 b7c7 c9a7 c7d7 a5c5
+
+go wtime 819985 btime 642422 ponder
+

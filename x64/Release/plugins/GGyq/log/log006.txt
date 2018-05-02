@@ -1,0 +1,50 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+fen 3ak3C/4a4/4b4/5R3/8p/2B1P1p2/8P/4B4/1C7/c3Kn1r1 w - - 0 1 moves b1f1 g4g3 e0e1 e8d7 f6e6 a0a7 e4e5 g3g2 f1f7 h0h1 e1e0 g2g1 e6f6 f0g2 f6f2 h1h0 e0e1 g2i1 e5e6 h0b0 c4a2 e9e8 f7f8 b0b3 f2f6 i1g2 e1e0 b3e3 f6f2 g2h4 e6d6 a7a5 f8f6 h4f3 i9f9 e8f8
+
+go wtime 135000 btime 15000 winc 0 binc 60000
+
+fen 3ak3C/4a4/4b4/5R3/8p/2B1P1p2/8P/4B4/1C7/c3Kn1r1 w - - 0 1 moves b1f1 g4g3 e0e1 e8d7 f6e6 a0a7 e4e5 g3g2 f1f7 h0h1 e1e0 g2g1 e6f6 f0g2 f6f2 h1h0 e0e1 g2i1 e5e6 h0b0 c4a2 e9e8 f7f8 b0b3 f2f6 i1g2 e1e0 b3e3 f6f2 g2h4 e6d6 a7a5 f8f6 h4f3 i9f9 e8f8 f9g9 a5e5
+
+go wtime 131000 btime 14157 winc 0 binc 60000 ponder
+
+ponderhit
+
+fen 3ak3C/4a4/4b4/5R3/8p/2B1P1p2/8P/4B4/1C7/c3Kn1r1 w - - 0 1 moves b1f1 g4g3 e0e1 e8d7 f6e6 a0a7 e4e5 g3g2 f1f7 h0h1 e1e0 g2g1 e6f6 f0g2 f6f2 h1h0 e0e1 g2i1 e5e6 h0b0 c4a2 e9e8 f7f8 b0b3 f2f6 i1g2 e1e0 b3e3 f6f2 g2h4 e6d6 a7a5 f8f6 h4f3 i9f9 e8f8 f9g9 a5e5 g9g3 e3d3
+
+go wtime 129953 btime 14610 winc 0 binc 60000 ponder
+
+ponderhit
+
+fen 3ak3C/4a4/4b4/5R3/8p/2B1P1p2/8P/4B4/1C7/c3Kn1r1 w - - 0 1 moves b1f1 g4g3 e0e1 e8d7 f6e6 a0a7 e4e5 g3g2 f1f7 h0h1 e1e0 g2g1 e6f6 f0g2 f6f2 h1h0 e0e1 g2i1 e5e6 h0b0 c4a2 e9e8 f7f8 b0b3 f2f6 i1g2 e1e0 b3e3 f6f2 g2h4 e6d6 a7a5 f8f6 h4f3 i9f9 e8f8 f9g9 a5e5 g9g3 e3d3 e2c0 f3d2
+
+go wtime 127953 btime 15000 winc 0 binc 60000 ponder
+
+ponderhit
+
+stop
+
+fen 3ak3C/4a4/4b4/5R3/8p/2B1P1p2/8P/4B4/1C7/c3Kn1r1 w - - 0 1 moves b1f1 g4g3 e0e1 e8d7 f6e6 a0a7 e4e5 g3g2 f1f7 h0h1 e1e0 g2g1 e6f6 f0g2 f6f2 h1h0 e0e1 g2i1 e5e6 h0b0 c4a2 e9e8 f7f8 b0b3 f2f6 i1g2 e1e0 b3e3 f6f2 g2h4 e6d6 a7a5 f8f6 h4f3 i9f9 e8f8 f9g9 a5e5 g9g3 e3d3 e2c0 f3d2 e0e1 f8e8
+
+go wtime 114000 btime 14687 winc 0 binc 60000 ponder
+
+ponderhit
+
+fen 3ak3C/4a4/4b4/5R3/8p/2B1P1p2/8P/4B4/1C7/c3Kn1r1 w - - 0 1 moves b1f1 g4g3 e0e1 e8d7 f6e6 a0a7 e4e5 g3g2 f1f7 h0h1 e1e0 g2g1 e6f6 f0g2 f6f2 h1h0 e0e1 g2i1 e5e6 h0b0 c4a2 e9e8 f7f8 b0b3 f2f6 i1g2 e1e0 b3e3 f6f2 g2h4 e6d6 a7a5 f8f6 h4f3 i9f9 e8f8 f9g9 a5e5 g9g3 e3d3 e2c0 f3d2 e0e1 f8e8 g3g4 g1f1
+
+go wtime 107999 btime 14782 winc 0 binc 60000 ponder
+
+ponderhit
+
+fen 3a5/4k4/3ab4/3P1C3/4c3p/6C2/3r4P/B2n5/4KR3/2B6 b - - 0 1 moves d2f1
+
+go wtime 107953 btime 14984 winc 0 binc 60000 ponder
+
+ponderhit
+

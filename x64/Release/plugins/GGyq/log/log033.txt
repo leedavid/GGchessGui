@@ -1,0 +1,152 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+cmd bookmove g6g5
+
+cmd bookmove h9g7
+
+cmd bookmove b9c7
+
+cmd bookmove a9b9
+
+cmd bookmove b7b3
+
+cmd bookmove b3c3
+
+fen rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1 moves c3c4 g6g5 b0c2 h9g7 b2a2 b9c7 a0b0 a9b9 h0g2 b7b3 h2h6 b3c3 h6g6
+
+go wtime 860000 btime 899468
+
+fen rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1 moves c3c4 g6g5 b0c2 h9g7 b2a2 b9c7 a0b0 a9b9 h0g2 b7b3 h2h6 b3c3 h6g6 i9h9 b0b9
+
+go wtime 859172 btime 872999 ponder
+
+ponderhit
+
+fen 1Rbakabr1/9/2n3nc1/p1p1p1C1p/6p2/2P6/P3P1P1P/C1N3N2/9/2cAKAB1R w - - 0 1 moves d0e1
+
+go wtime 844922 btime 870000 ponder
+
+ponderhit
+
+fen 1nbakabr1/9/6nc1/p1p1p1C1p/6p2/2P6/P3P1P1P/C1N3N2/4A4/2c1KAB1R w - - 0 1 moves c2d4
+
+go wtime 830000 btime 869735 ponder
+
+ponderhit
+
+fen 1nbakabr1/9/6nc1/p1p1p1C1p/6p2/2P6/P3P1P1P/C1N3N2/4A4/2c1KAB1R w - - 0 1 moves c2d4 c0a0 i0h0
+
+go wtime 815656 btime 854000 ponder
+
+ponderhit
+
+fen 1nbakabr1/9/6nc1/p1p1p1C1p/6p2/2P6/P3P1P1P/C1N3N2/4A4/2c1KAB1R w - - 0 1 moves c2d4 c0a0 i0h0 h7h5 h0h4
+
+go wtime 802000 btime 851844 ponder
+
+stop
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves
+
+go wtime 788000 btime 850922
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves c9e7 a2d2
+
+go wtime 787625 btime 835000 ponder
+
+stop
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves c9e7 a2b2
+
+go wtime 776000 btime 833515
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves c9e7 a2b2 h5h1 c6d4
+
+go wtime 775547 btime 749000 ponder
+
+ponderhit
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves c9e7 a2b2 h5h1 c6d4 h9h6 b2b6
+
+go wtime 761125 btime 716985 ponder
+
+ponderhit
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves c9e7 a2b2 h5h1 c6d4 h9h6 b2b6 h6h2 b6b2
+
+go wtime 761734 btime 703986 ponder
+
+stop
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves c9e7 a2b2 h5h1 c6d4 h9h6 b2b6 h6h2 g0e2
+
+go wtime 756000 btime 703250
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves c9e7 a2b2 h5h1 c6d4 h9h6 b2b6 h6h2 g0e2 g7i8 b6b8
+
+go wtime 755469 btime 678000 ponder
+
+stop
+
+fen 1nbakabr1/9/6n2/p1N1p1C1p/6pc1/2P6/P3P1P1P/C5N2/4A4/c3KABR1 b - - 0 1 moves c9e7 a2b2 h5h1 c6d4 h9h6 b2b6 h6h2 g0e2 g7i8 c4c5
+
+go wtime 743000 btime 677406
+
+fen 1n1akab2/8n/9/pC2p1C1p/2b3p2/3N5/P3P1P1P/4B1Nr1/4A2c1/c3KA1R1 w - - 0 1 moves d4e6
+
+go wtime 742953 btime 665000 ponder
+
+ponderhit
+
+fen 1n1akab2/8n/9/pC2N1C1p/2b3p2/9/P3P1P1P/4B1Nr1/4A2c1/c3KA1R1 b - - 0 1 moves c5e7 e6f4
+
+go wtime 728985 btime 664907 ponder
+
+ponderhit
+
+fen 1n1akab2/8n/9/pC2N1C1p/2b3p2/9/P3P1P1P/4B1Nr1/4A2c1/c3KA1R1 b - - 0 1 moves c5e7 e6f4 b9c7 b6d6
+
+go wtime 714000 btime 663703 ponder
+
+stop
+
+fen 1n1akab2/8n/9/pC2N1C1p/2b3p2/9/P3P1P1P/4B1Nr1/4A2c1/c3KA1R1 b - - 0 1 moves c5e7 e6f4 b9c7 b6c6
+
+go wtime 700000 btime 662406
+

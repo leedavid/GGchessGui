@@ -1,0 +1,12 @@
+Microsoft (R) Incremental Linker Version 8.00.50727.42
+Copyright (C) Microsoft Corporation.  All rights reserved.
+--------------------- Done ----------------------
+
+1>------ Build started: Project: GGchess, Configuration: Debug Win32 ------
+1>Compiling...
+1>backend.cpp
+1>Linking...
+1>Embedding manifest...
+1>Build log was saved at "file://f:\GGchess\Debug\BuildLog.htm"
+1>GGchess - 0 error(s), 0 warning(s)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

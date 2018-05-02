@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FCB706C6-A5A9-4FD6-B242-E6817B29A22F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>GGchess</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDialog.cpp" />
+    <ClCompile Include="AnalysisDialog.cpp" />
+    <ClCompile Include="asprotect.cpp" />
+    <ClCompile Include="backend.cpp" />
+    <ClCompile Include="backend_ok.cpp" />
+    <ClCompile Include="BerKeley.cpp" />
+    <ClCompile Include="bk_book.cpp" />
+    <ClCompile Include="BoardDisplay.cpp" />
+    <ClCompile Include="book_common.cpp" />
+    <ClCompile Include="captureFace.cpp" />
+    <ClCompile Include="com_util.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="data.cpp" />
+    <ClCompile Include="Dialog_Common.cpp" />
+    <ClCompile Include="DispCommon.cpp" />
+    <ClCompile Include="dis_data.cpp" />
+    <ClCompile Include="Dlg_ICS_Count_Set.cpp" />
+    <ClCompile Include="DLG_LOG_DISPLAY.cpp" />
+    <ClCompile Include="Doard_Display.cpp" />
+    <ClCompile Include="ErrorDialog.cpp" />
+    <ClCompile Include="EventFunction.cpp" />
+    <ClCompile Include="ExportAllToUbb.cpp" />
+    <ClCompile Include="Feature.cpp" />
+    <ClCompile Include="FeedMoveToProgram.cpp" />
+    <ClCompile Include="FileWR.cpp" />
+    <ClCompile Include="FindOnlyFace.cpp" />
+    <ClCompile Include="GameEnds.cpp" />
+    <ClCompile Include="gamelist.cpp" />
+    <ClCompile Include="GameMode.cpp" />
+    <ClCompile Include="GameOther.cpp" />
+    <ClCompile Include="GameReset.cpp" />
+    <ClCompile Include="GetNextChar.cpp" />
+    <ClCompile Include="HandleMachineMove.cpp" />
+    <ClCompile Include="HandleMachineQB.cpp" />
+    <ClCompile Include="HandleMachineQH.cpp" />
+    <ClCompile Include="HandleTableIcsMessage.cpp" />
+    <ClCompile Include="HDC_Function.cpp" />
+    <ClCompile Include="ICS_Board_List.cpp" />
+    <ClCompile Include="ICS_Common.cpp" />
+    <ClCompile Include="Init.cpp" />
+    <ClCompile Include="InitBackEnd1.cpp" />
+    <ClCompile Include="InitBackEnd2.cpp" />
+    <ClCompile Include="InitBackEnd3.cpp" />
+    <ClCompile Include="InitChessProgram.cpp" />
+    <ClCompile Include="isFourTypeChessCapture.cpp" />
+    <ClCompile Include="isTrueCap_ByDirect.cpp" />
+    <ClCompile Include="Is_Can_Move.cpp" />
+    <ClCompile Include="Is_Protect.cpp" />
+    <ClCompile Include="Is_True_Cap.cpp" />
+    <ClCompile Include="LoadGame.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="MailGame.cpp" />
+    <ClCompile Include="mersenne.cpp" />
+    <ClCompile Include="MouseEvent.cpp" />
+    <ClCompile Include="moves.cpp" />
+    <ClCompile Include="move_evasion.cpp" />
+    <ClCompile Include="move_gen.cpp" />
+    <ClCompile Include="MxqToSqlite.cpp" />
+    <ClCompile Include="mysql_chess.cpp" />
+    <ClCompile Include="mysql_WEB_chess.cpp" />
+    <ClCompile Include="NextMatchGame.cpp" />
+    <ClCompile Include="ObsBoard.cpp" />
+    <ClCompile Include="OpenFileDialog.cpp" />
+    <ClCompile Include="ParaseDispMoveToUCCI.cpp" />
+    <ClCompile Include="ParseOneMove.cpp" />
+    <ClCompile Include="PgnToSqlite.cpp" />
+    <ClCompile Include="position.cpp" />
+    <ClCompile Include="PreGen.cpp" />
+    <ClCompile Include="QuestionDialog.cpp" />
+    <ClCompile Include="Read_From_ICS_mxq_CN140.cpp" />
+    <ClCompile Include="Read_From_ICS_mxq_CN183.cpp" />
+    <ClCompile Include="Read_From_ICS_mxq_EN140.cpp" />
+    <ClCompile Include="Read_From_ICS_mxq_EN183.cpp" />
+    <ClCompile Include="ReceiveFromProgram.cpp" />
+    <ClCompile Include="repeat.cpp" />
+    <ClCompile Include="ResurrectChessProgram.cpp" />
+    <ClCompile Include="SaveGame.cpp" />
+    <ClCompile Include="see_draw_20081016.cpp" />
+    <ClCompile Include="see_draw_old.cpp" />
+    <ClCompile Include="see_move_new.cpp" />
+    <ClCompile Include="see_move_old.cpp" />
+    <ClCompile Include="SendBoard.cpp" />
+    <ClCompile Include="SendControlParameterToCps.cpp" />
+    <ClCompile Include="SendMoveToProgram.cpp" />
+    <ClCompile Include="SendTimeControl.cpp" />
+    <ClCompile Include="SendTimeReMaining.cpp" />
+    <ClCompile Include="SendToProgram.cpp" />
+    <ClCompile Include="SetGameInfo.cpp" />
+    <ClCompile Include="SqliteCommon.cpp" />
+    <ClCompile Include="SqliteSettingData.cpp" />
+    <ClCompile Include="SqlSaveGame.cpp" />
+    <ClCompile Include="StartChessProgram.cpp" />
+    <ClCompile Include="StartupDialog.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="StepList_Dialog.cpp" />
+    <ClCompile Include="stringFunction.cpp" />
+    <ClCompile Include="timeDisplay_Dialog.cpp" />
+    <ClCompile Include="TypeInMove_Dialog.cpp" />
+    <ClCompile Include="woptions.cpp" />
+    <ClCompile Include="XqlToSqlite.cpp" />
+    <ClCompile Include="YinQinCommon.cpp" />
+    <ClCompile Include="zobrist.cpp" />
+    <ClCompile Include="主程序.cpp" />
+    <ClCompile Include="佳佳引擎.cpp" />
+    <ClCompile Include="保存窗口.cpp" />
+    <ClCompile Include="保存窗口1.cpp" />
+    <ClCompile Include="剪贴板.cpp" />
+    <ClCompile Include="奇兵引擎.cpp" />
+    <ClCompile Include="字体.cpp" />
+    <ClCompile Include="导出棋库棋局.cpp" />
+    <ClCompile Include="工具条.cpp" />
+    <ClCompile Include="引擎事件.cpp" />
+    <ClCompile Include="引擎分析.cpp" />
+    <ClCompile Include="引擎设置.cpp" />
+    <ClCompile Include="旋风105.cpp" />
+    <ClCompile Include="日志窗口.cpp" />
+    <ClCompile Include="时间.cpp" />
+    <ClCompile Include="棋库窗口.cpp" />
+    <ClCompile Include="状态栏.cpp" />
+    <ClCompile Include="自动学习.cpp" />
+    <ClCompile Include="自动用引擎校验局面.cpp" />
+    <ClCompile Include="菜单.cpp" />
+    <ClCompile Include="让引擎思考.cpp" />
+    <ClCompile Include="让引擎进入后台.cpp" />
+    <ClCompile Include="象眼引擎.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug\BuildLog.htm" />
+    <None Include="release\BuildLog.htm" />
+    <None Include="resource.hm" />
+    <None Include="sqlite3.def" />
+    <None Include="UpgradeLog.htm" />
+    <None Include="UpgradeLog2.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="chess.h" />
+    <ClInclude Include="chess_function_common.h" />
+    <ClInclude Include="chess_function_disp.h" />
+    <ClInclude Include="data.h" />
+    <ClInclude Include="GGchess.h" />
+    <ClInclude Include="pregen.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="函数定义.h" />
+    <ClInclude Include="定义.h" />
+    <ClInclude Include="常量.h" />
+    <ClInclude Include="枚举.h" />
+    <ClInclude Include="结构.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GGchess.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

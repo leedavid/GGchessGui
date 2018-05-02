@@ -1,0 +1,120 @@
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+stop
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+force
+
+stop
+
+ucinewgame
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+setoption name Hash value 512
+
+setoption name Threads value 5
+
+cmd bookmove h0g2
+
+cmd bookmove h2i2
+
+cmd bookmove i0h0
+
+cmd bookmove c3c4
+
+cmd bookmove h0h6
+
+cmd bookmove g0e2
+
+cmd bookmove b0c2
+
+fen rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1 moves h0g2 g6g5 h2i2 h9g7 i0h0 i9h9 c3c4 b9c7 h0h6 b7b3 g0e2 g9e7 b0c2 g7f5
+
+go wtime 897453 btime 826000
+
+fen rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1 moves h0g2 g6g5 h2i2 h9g7 i0h0 i9h9 c3c4 b9c7 h0h6 b7b3 g0e2 g9e7 b0c2 g7f5 h6f6 f5g3
+
+go wtime 881000 btime 825063 ponder
+
+ponderhit
+
+fen r1baka1r1/9/2n1b2c1/p1p1pR2C/6p2/2P6/Pc2P1n1P/1CN1B1N2/9/R1BAKA3 b - - 0 1 moves h7h2
+
+go wtime 869000 btime 809266 ponder
+
+stop
+
+fen r1baka1r1/9/2n1b2c1/p1p1pR2C/6p2/2P6/Pc2P1n1P/1CN1B1N2/9/R1BAKA3 b - - 0 1 moves h7g7
+
+go wtime 868750 btime 789000
+
